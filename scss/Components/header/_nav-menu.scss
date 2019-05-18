@@ -1,0 +1,393 @@
+.main-header {
+	display: block;
+	position: relative;
+	@include size(100%, 110px);
+	border-bottom: 1px solid $color-border;
+	////////////header-top
+	.header-top {
+		@include flex(flex-end, flex-end);
+		height: 30px;
+		/////language
+		.language {
+			margin-right: 1.5rem;
+			.nav-lang {
+				li {
+					a {
+						position: relative;
+						@include text(null, null, uppercase, none);
+						padding: 0 0.55rem;
+						color: $color-sec;
+						&.active {
+							color: $color-pr;
+						}
+					}
+					&:first-child {
+						a {
+							padding-right: 0.556rem;
+							&::before {
+								@include before('', 50%, null, 0);
+								@include size(1px, 50%);
+								@include transform(translateY(-50%));
+								display: block;
+								background-color: $color-sec;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		/////search-button
+		.search-button {
+			@include flex(null, center);
+			cursor: pointer;
+			a {
+				font-size: 1.1rem;
+				color: $color-pr;
+			}
+			.search-content {
+				visibility: hidden;
+				position: absolute;
+				top: calc(100% + 1px);
+				left: 0;
+				opacity: 0;
+				@include size(100%, 0);
+				@include flex(center, center);
+				background-color: $color-w;
+				@include transition(all 0.4s ease-out);
+				input#search {
+					@include size(40%, 50px);
+					border: 1px solid $color-border;
+					position: relative;
+					border-radius: 0;
+					&:focus {
+						box-shadow: 0 0 0 0.1rem $color-pr;
+					}
+				}
+				.btn-icon-search {
+					margin-left: -70px;
+					@include size(70px, 50px);
+					background-color: transparent;
+					color: $color-pr;
+					font-size: 1rem;
+					border-color: transparent;
+					cursor: pointer;
+					z-index: 1;
+					&:focus {
+						box-shadow: none;
+						outline: none;
+					}
+				}
+				/////toggle show
+				&.show {
+					@include transition(all 0.4s ease-in);
+					visibility: visible;
+					height: 193px;
+					opacity: 1;
+					z-index: 209;
+				}
+			}
+		}
+	}
+
+	///////////main-menu
+	.main-menu {
+		@include flex();
+		@include size(100%, 80px);
+		///////logo
+		.logo {
+			width: 15%;
+			padding-right: 1.3rem;
+			padding-bottom: 2.65rem;
+			position: relative;
+			@include flex(null, flex-end);
+			@include box-sizing(border-box);
+			&:before {
+				@include before('', 0.5rem, 100%);
+				@include size(2px, calc(100% - 3rem));
+				background-color: $color-border;
+			}
+			img {
+				@include img-fit(null, 100%, cover);
+			}
+		}
+		///logo-department
+		.logo-department {
+			width: 25%;
+			padding-left: 1.5rem;
+			padding-bottom: 2.65rem;
+			@include flex(null, flex-end);
+			@include box-sizing(border-box);
+			img {
+				@include img-fit(null, 100%, cover);
+			}
+		}
+
+		////////nav-menu
+		.nav-menu {
+			width: 60%;
+			justify-content: flex-end;
+			align-items: flex-end;
+			.nav-main-menu {
+				@include size(100%, 100%);
+				justify-content: flex-end;
+				// lv1
+				li.nav-item {
+					height: 100%;
+					a.nav-link {
+						@include flex(null, flex-end);
+						@include text(1rem 'Arial', 1rem, uppercase, none);
+						padding: 0 1.3rem;
+						padding-bottom: 2.6rem;
+						height: 100%;
+						color: $color-sec;
+						font-weight: 500;
+					}
+					// menu child of lv1
+					.has-child-menu {
+						@include flex(null, center);
+						visibility: hidden;
+						@include size(100%, auto);
+						min-height: 193px;
+						background-color: $color-w;
+						padding: 3.2rem 0;
+						position: absolute;
+						top: calc(100% + 1px);
+						left: 0;
+						opacity: 0;
+						z-index: 299;
+						@include transition(all 0.4s ease-out);
+
+                        .nav-child-menu{
+                            @include grid(
+                                repeat(4,minmax(270px,1fr)),
+                                auto,
+                            );
+                            justify-items: center;
+                            grid-gap: 2rem;
+                            .item-child-menu{
+                                @include flex(center,);
+                                text-align: center;
+                                &:hover{
+                                    img{
+                                        -webkit-filter: grayscale(100%) brightness(100%) sepia(100%) hue-rotate(-185deg) saturate(700%) contrast(0.9);
+                                        filter: grayscale(100%) brightness(100%) sepia(100%) hue-rotate(-185deg) saturate(700%) contrast(0.9);
+                                    }
+                                    span{
+                                        color: $color-pr;
+                                    }
+                                }
+                                a{
+                                    text-decoration: none;
+                                }
+                                img{
+                                    @include flex(center,center);
+                                    margin: auto;
+                                    @include img-fit(null,100%,cover);
+                                    max-height: 70px;
+                                    min-height: 70px;
+                                    margin-bottom: 2rem;
+                                }
+                                span{
+                                    @include text(1.285rem 'Arial',auto,uppercase,none);
+                                    color: $color-sec;
+                                }
+                            }
+                        }
+						// if has child menu of car
+						&.car {
+							&:before {
+								@include before('', 0, 0);
+								background-color: $color-pr;
+								@include size(100%, 6px);
+							}
+							.list-type {
+								@include flex();
+
+								////////xe tải
+								.item-type {
+									position: relative;
+									padding-right: 2.5rem;
+									img {
+										@include img-fit(null, 100%, cover);
+										max-height: 65px;
+									}
+									&:before {
+										@include before('', 0, 100%);
+										@include size(1px, 100%);
+										background-color: $color-border;
+									}
+								}
+								.nav-child-menu-car {
+									@include size(100%, 0);
+									@include grid(repeat(5, 1fr), auto);
+									padding-left: 2.5rem;
+									grid-gap: 2.5rem;
+									.item-child-menu {
+										@include flex(center, center);
+										img {
+											@include img-fit(null, 100%, cover);
+											max-height: 65px;
+										}
+									}
+								}
+							}
+                        }
+                        // if has child menu of car bus
+						&.car-bus {
+							&:before {
+								@include before('', 0, 0);
+								background-color: $color-bus;
+								@include size(100%, 6px);
+							}
+							.list-type {
+								@include flex();
+
+								////////xe tải
+								.item-type {
+									position: relative;
+									padding-right: 2.5rem;
+									img {
+										@include img-fit(null, 100%, cover);
+										max-height: 65px;
+									}
+									&:before {
+										@include before('', 0, 100%);
+										@include size(1px, 100%);
+										background-color: $color-border;
+									}
+								}
+								.nav-child-menu {
+									@include size(100%, 0);
+									@include grid(repeat(5, 1fr), auto);
+									padding-left: 2.5rem;
+									grid-gap: 2.5rem;
+									.item-child-menu {
+										@include flex(center, center);
+										img {
+											@include img-fit(null, 100%, cover);
+											max-height: 65px;
+										}
+									}
+								}
+
+								////// xe bus
+								///////////menu
+								.menu-type {
+									#busMenu {
+										padding: 1.5rem 0;
+										padding-right: 4rem;
+										display: block;
+										border: none;
+										li.nav-item {
+											padding-bottom: 1.7rem;
+											a.nav-link {
+												@include text(1.35rem 'Arial');
+												display: inline-flex;
+												align-items: center;
+												padding: 0;
+												text-align: center;
+												color: $color-sec;
+												border: none;
+												position: relative;
+												white-space: nowrap;
+												&.active {
+													color: $color-pr;
+													&:before {
+														display: block;
+														@include transform(rotateY(0deg));
+													}
+												}
+												&:before {
+													@include before('\f054', 0, calc(100% + 1rem));
+													display: none;
+													@include size(0.5rem, 1rem);
+													@include transform(rotateY(-45deg));
+													color: $color-pr;
+													font-size: 1.3rem;
+													font-family: 'Font Awesome 5 Free';
+													font-weight: 900;
+												}
+												&:hover {
+													color: $color-pr;
+													&:before {
+														display: block;
+														@include transform(rotateY(0deg));
+													}
+												}
+											}
+										}
+									}
+								}
+								////////////tab content
+								.tabcontainer {
+									width: 100%;
+									#busMenuContent {
+										padding-left: 4rem;
+										padding-bottom: 4rem;
+										position: relative;
+										width: 100%;
+										&:before {
+											@include before('', 0, 0);
+											@include size(1px, 100%);
+											background-color: $color-border;
+										}
+										.nav-child-menu-bus {
+											@include grid(repeat(3, minmax(230px, 1fr)), auto);
+											@include size(100%, auto);
+											grid-gap: 6rem;
+											justify-items: center;
+											.item-child-menu {
+												@include flex(center);
+												text-align: center;
+												&:hover {
+													span {
+														color: $color-pr;
+													}
+												}
+												a {
+													text-decoration: none;
+												}
+												img {
+													@include flex(center);
+													@include img-fit(100%, 100%, cover);
+													max-height: 90px;
+													margin-bottom: 1.7rem;
+												}
+												span {
+													@include text(bold 1.5rem 'Arial', 2rem, uppercase, none);
+													color: $color-sec;
+												}
+											}
+										}
+									}
+								}
+							}
+                        }
+					}
+					&.active{
+						a.nav-link{
+							color: $color-pr;
+						}
+					}
+					//////////hover child menu
+					&:hover {
+						a {
+							color: $color-pr;
+						}
+						.has-child-menu {
+							visibility: visible;
+							opacity: 1;
+							@include transition(all 0.4s ease-in);
+						}
+					}
+					&:last-child {
+						a.nav-link {
+							padding-right: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,32 @@
+.sidebar-category{
+    width: 25%;
+    display: block;
+    #myTabProduct{
+        width: 100%;
+        display: block;
+        border-bottom: none;
+        li.nav-item{
+            width: 100%;
+            border-bottom: 1px solid $color-border;
+            a.nav-link{
+                padding: 0.85rem 2rem;
+                width: 100%;
+                @include text(1rem 'Arial',3.4rem,uppercase);
+                color: $color-sec;
+                border: none;
+                @include transition(all 0.4s ease-out);
+                &.active{
+                    background-color: #ae985e;
+                    color: $color-w;
+                    border: none;
+                }
+                &:hover{
+                    background-color: #ae985e;
+                    color: $color-w;
+                    @include transition(all 0.4s ease-in);
+                    border: none;
+                }
+            }
+        }
+    }
+}

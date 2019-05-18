@@ -1,0 +1,16 @@
+.acc-container{
+    @include flex();
+    padding: 2.5rem 0;
+}
+
+// sidebar
+@import 'Pages/accessary/_sidebar.scss';
+
+// accessary-container
+@import 'Pages/accessary/_accessary-container.scss';
+
+//modal popup
+@import 'Components/_modal.scss';
+
+//magniflier
+@import 'Components/_magniflier.scss';

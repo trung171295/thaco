@@ -1,0 +1,161 @@
+.tab-menu{
+    position: relative;
+    // tab menu
+    #tabseat{
+        @include flex(center,);
+        @include size(100%,100px);
+        border-bottom: none;
+        // xe tải màu xanh
+        li.nav-item{
+            @include size(calc(50% - 1rem ),100%);
+            @include flex(center,center);
+            @include transition(all 0.5s ease-out);
+            margin-right: 1rem;
+            background-image: url(../images/icon/line1.png);
+            background-position: bottom right;
+            background-repeat: no-repeat;
+            -webkit-filter:  grayscale(100%) brightness(350%) contrast(0.9);
+            filter: grayscale(100%) brightness(350%) contrast(0.9);
+            &.current{
+                filter: none!important;
+                a.nav-link{
+                    img{
+                        filter: none!important;
+                    }
+                }
+            }
+            // xe bus màu vàng
+            &:last-child{
+                margin-right: 0;
+                margin-left: 1rem;
+                background-image: url(../images/icon/line2.png);
+                background-position: left bottom;
+                background-repeat: no-repeat;
+                -webkit-filter:  grayscale(100%) brightness(160%) contrast(0.9);
+                filter: grayscale(100%) brightness(160%) contrast(0.9);
+                a.nav-link{
+                    img{
+                        -webkit-filter:  grayscale(100%) brightness(105%) contrast(0.9);
+                        filter: grayscale(100%) brightness(105%) contrast(0.9);
+                    }
+                }
+            }
+            &:hover{
+                @include transition(all 0.5s ease-in);
+                filter:none!important;
+                a.nav-link{
+                    img{
+                        filter: none!important
+                    }
+                }
+            }
+            a.nav-link{
+                padding: 0;
+                color: $color-sec;
+                background-color: transparent;
+                border-color: transparent;
+                img{
+                    @include img-fit(null,100%,cover);
+                    max-height: 45px;
+                    -webkit-filter:  grayscale(100%) brightness(90%) contrast(0.9);
+                    filter: grayscale(100%) brightness(90%) contrast(0.9);
+                }
+            }
+        }
+    }
+
+    // tab content
+    #tabseatContent{
+        &::before{
+            @include before(
+                '',
+                100%,
+                0
+            );
+            @include size(100%,1px);
+            background-color: $color-border;
+        }
+        .sw-seat-tai,.sw-bus{
+            padding: 2.5rem 0;
+            @include flex(center,center);
+            .swiper-wrapper{
+                @include flex(center,center);
+            }
+            .swiper-slide{
+                border-left: 1px solid $color-border;
+                margin: 1rem 0;
+                @include size(100%,100px);
+                @include flex(center,center);
+                &:first-child{
+                    border-left: none;
+                }
+                a{
+                    display: block;
+                    text-decoration: none;
+                    text-align: center;
+                    @include transition(all 0.3s ease-out);
+                    &:hover{
+                        @include transition(all 0.3s ease-in);
+                        span{
+                            @include transition(all 0.3s ease-in);
+                            color: $color-pr;
+                        }
+                    }
+                    img{
+                        @include flex(center,center);
+                        margin: auto;
+                        @include img-fit(null,100%,cover);
+                        max-height: 70px;
+                        @include transition(all 0.3s ease-out);
+                    }
+                    span{
+                        @include transition(all 0.3s ease-out);
+                        @include text(1.35rem 'Arial',auto,uppercase,none);
+                        color: $color-sec;
+                        margin-top: 1rem;
+                        display: block;
+                    }
+                }
+            }
+        }
+        .sw-bus{
+            .swiper-slide{
+                border-left: 1px solid $color-border;
+                margin: 1rem 0;
+                @include size(100%,100px);
+                @include flex(center,center);
+                &:first-child{
+                    border-left: none;
+                }
+                a{
+                    display: block;
+                    text-decoration: none;
+                    text-align: center;
+                    &:hover{
+                        img{
+                            -webkit-filter: grayscale(100%) brightness(100%) sepia(100%) hue-rotate(-185deg) saturate(700%) contrast(0.9);
+                            filter: grayscale(100%) brightness(100%) sepia(100%) hue-rotate(-185deg) saturate(700%) contrast(0.9);
+                        }
+                        span{
+                            @include transition(all 0.3s ease-in);
+                            color: $color-pr;
+                        }
+                    }
+                    img{
+                        @include flex(center,center);
+                        margin: auto;
+                        @include img-fit(null,100%,cover);
+                        max-height: 70px;
+                    }
+                    span{
+                        @include transition(all 0.3s ease-out);
+                        @include text(1.35rem 'Arial',auto,uppercase,none);
+                        color: $color-sec;
+                        margin-top: 1rem;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

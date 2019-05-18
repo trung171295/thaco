@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Demo</title>
+    <link rel="Shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animated.css">
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- header -->
+        <header class="main-header">
+            <div class="container">
+
+                <!-- header-top -->
+                <div class="header-top">
+
+                    <!-- language -->
+                    <div class="language">
+                        <ul class="nav nav-lang">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">en</a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link active">vi</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- search-button -->
+                    <div class="search-button">
+                        <a href="#">
+                            <span><i class="fas fa-search"></i></span>
+                        </a>
+                        <div class="search-content">
+                            <input type="text" class="form-control" name="" id="search"
+                                placeholder="Tìm thông tin tại đây">
+                            <button class="btn-icon-search" type="submit"><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- main-menu -->
+                <div class="main-menu">
+
+                    <!-- logo -->
+                    <div class="logo">
+                        <a href="#">
+                            <img src="images/logo/logo.png" alt="">
+                        </a>
+                    </div>
+
+                    <!-- logo-department -->
+                    <div class="logo-department">
+                        <a href="#">
+                            <img src="images/logo/logo_showroom.png" alt="">
+                        </a>
+                    </div>
+
+                    <!-- menu primary -->
+                    <div class="nav-menu">
+                        <ul class="nav nav-main-menu">
+
+                            <!-- xe tải -->
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">xe tải</a>
+                                <!-- if has child menu -->
+                                <div class="has-child-menu car">
+                                    <div class="container">
+                                        <div class="list-type">
+                                            <div class="item-type">
+                                                <img src="images/icon/car1.png" alt="">
+                                            </div>
+                                            <ul class="nav nav-child-menu-car">
+                                                <div class="item-child-menu">
+                                                    <a href="#">
+                                                        <img src="images/brands/fuso.png" alt="">
+                                                        <span></span>
+                                                    </a>
+                                                </div>
+                                                <div class="item-child-menu">
+                                                    <a href="#">
+                                                        <img src="images/brands/foton.png" alt="">
+                                                        <span></span>
+                                                    </a>
+                                                </div>
+                                                <div class="item-child-menu">
+                                                    <a href="#">
+                                                        <img src="images/brands/kia.png" alt="">
+                                                        <span></span>
+                                                    </a>
+                                                </div>
+                                                <div class="item-child-menu">
+                                                    <a href="#">
+                                                        <img src="images/brands/thaco_towner.png" alt="">
+                                                        <span></span>
+                                                    </a>
+                                                </div>
+                                                <div class="item-child-menu">
+                                                    <a href="#">
+                                                        <img src="images/brands/xcd.png" alt="">
+                                                        <span></span>
+                                                    </a>
+                                                </div>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <!-- xe bus -->
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">xe bus</a>
+                                <!-- if has child menu -->
+                                <div class="has-child-menu car-bus">
+                                    <div class="container">
+                                        <div class="list-type">
+                                            <!-- menu tab xe bus -->
+                                            <div class="menu-type">
+                                                <ul class="nav nav-tabs" id="busMenu" role="tablist">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link active" id="bus-seat" data-toggle="tab"
+                                                            href="#seat" role="tab" aria-controls="seat"
+                                                            aria-selected="true">xe ghế ngồi</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" id="bus-located" data-toggle="tab"
+                                                            href="#located" role="tab" aria-controls="located"
+                                                            aria-selected="false">xe giường nằm</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" id="bus-city" data-toggle="tab"
+                                                            href="#bcity" role="tab" aria-controls="bcity"
+                                                            aria-selected="false">city bus</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- tab content -->
+                                            <div class="tabcontainer">
+                                                <div class="tab-content" id="busMenuContent">
+
+                                                    <!-- tab xe ghế ngồi -->
+                                                    <div class="tab-pane fade show active" id="seat" role="tabpanel"
+                                                        aria-labelledby="bus-seat">
+                                                        <ul class="nav nav-child-menu-bus">
+                                                            <div class="item-child-menu">
+                                                                <a href="#">
+                                                                    <img src="images/icon/tb79s.png" alt="">
+                                                                    <span>thaco tb79s</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="item-child-menu">
+                                                                <a href="#">
+                                                                    <img src="images/icon/85s.png" alt="">
+                                                                    <span>meadow 85s</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="item-child-menu">
+                                                                <a href="#">
+                                                                    <img src="images/icon/120s.png" alt="">
+                                                                    <span>bluesky 120s</span>
+                                                                </a>
+                                                            </div>
+                                                        </ul>
+                                                    </div>
+
+                                                    <!-- tab xe giường nằm -->
+                                                    <div class="tab-pane fade" id="located" role="tabpanel"
+                                                        aria-labelledby="bus-located">
+                                                        <ul class="nav nav-child-menu-bus">
+                                                            <div class="item-child-menu">
+                                                                <a href="#">
+                                                                    <img src="images/icon/tb79s.png" alt="">
+                                                                    <span>thaco tb79s</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="item-child-menu">
+                                                                <a href="#">
+                                                                    <img src="images/icon/85s.png" alt="">
+                                                                    <span>meadow 85s</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="item-child-menu">
+                                                                <a href="#">
+                                                                    <img src="images/icon/120s.png" alt="">
+                                                                    <span>bluesky 120s</span>
+                                                                </a>
+                                                            </div>
+                                                        </ul>
+                                                    </div>
+
+                                                    <!-- tab xe city bus -->
+                                                    <div class="tab-pane fade" id="bcity" role="tabpanel"
+                                                        aria-labelledby="bus-city">
+                                                        <ul class="nav nav-child-menu-bus">
+                                                            <div class="item-child-menu">
+                                                                <a href="#">
+                                                                    <img src="images/icon/tb79s.png" alt="">
+                                                                    <span>thaco tb79s</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="item-child-menu">
+                                                                <a href="#">
+                                                                    <img src="images/icon/85s.png" alt="">
+                                                                    <span>meadow 85s</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="item-child-menu">
+                                                                <a href="#">
+                                                                    <img src="images/icon/120s.png" alt="">
+                                                                    <span>bluesky 120s</span>
+                                                                </a>
+                                                            </div>
+                                                        </ul>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <!-- dịch vụ -->
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">dịch vụ</a>
+                                <!-- if has child menu -->
+                                <div class="has-child-menu">
+                                    <div class="container">
+                                        <ul class="nav nav-child-menu">
+                                            <div class="item-child-menu">
+                                                <a href="#">
+                                                    <img src="images/icon/bh.png" alt="">
+                                                    <span>bảo hành bảo dưỡng</span>
+                                                </a>
+                                            </div>
+                                            <div class="item-child-menu">
+                                                <a href="#">
+                                                    <img src="images/icon/sc.png" alt="">
+                                                    <span>dịch vụ sữa chữa</span>
+                                                </a>
+                                            </div>
+                                            <div class="item-child-menu">
+                                                <a href="#">
+                                                    <img src="images/icon/lk.png" alt="">
+                                                    <span>linh kiện - phụ tùng</span>
+                                                </a>
+                                            </div>
+                                            <div class="item-child-menu">
+                                                <a href="#">
+                                                    <img src="images/icon/mlpp.png" alt="">
+                                                    <span>mạng lưới phản hồi</span>
+                                                </a>
+                                            </div>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <!-- phụ tùng -->
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">phụ tùng</a>
+                            </li>
+
+                            <!-- tin tức -->
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">tin tức</a>
+                            </li>
+
+                            <!-- hỗ trợ -->
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">hỗ trợ</a>
+                                <!-- if has child menu -->
+                                <div class="has-child-menu">
+                                    <div class="container">
+                                        <ul class="nav nav-child-menu">
+                                            <div class="item-child-menu">
+                                                <a href="#">
+                                                    <img src="images/icon/tv.png" alt="">
+                                                    <span>tư vấn sử dụng</span>
+                                                </a>
+                                            </div>
+                                            <div class="item-child-menu">
+                                                <a href="#">
+                                                    <img src="images/icon/tc.png" alt="">
+                                                    <span>tư vấn tài chính</span>
+                                                </a>
+                                            </div>
+                                            <div class="item-child-menu">
+                                                <a href="#">
+                                                    <img src="images/icon/radio.png" alt="">
+                                                    <span>tư vấn trực tuyến trên radio</span>
+                                                </a>
+                                            </div>
+                                            <div class="item-child-menu">
+                                                <a href="#">
+                                                    <img src="images/icon//hd.png" alt="">
+                                                    <span>hỏi đáp</span>
+                                                </a>
+                                            </div>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <!-- icon-bar -->
+                    <div class="icon-bar">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+
+        <!-- banner -->
+        <section class="banner">
+            <div class="line"></div>
+            <img src="images/banner/3THACOTAI-SHOWROOM_SẢN-PHẨM_03.jpg" alt="">
+        </section>
+
+
+        <!-- breadcrumb -->
+        <section class="br gr">
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Trang Chủ</a></li>
+                    <li class="breadcrumb-item"><a href="#">Sản Phẩm</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><a href="#">Xe Bus</a></li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- product-category -->
+        <section class="product-category">
+            <div class="container">
+                <div class="product-container">
+
+                    <!-- sidebar -tab -->
+                    <div class="sidebar-category">
+                        <ul class="nav nav-tabs" id="myTabProduct" role="tablist">
+                            <!-- xe ghế ngồi -->
+                            <li class="nav-item">
+                                <a class="nav-link active" id="ghengoi-tab" data-toggle="tab" href="#ghengoi" role="tab"
+                                    aria-controls="ghengoi" aria-selected="true">xe ghế ngồi</a>
+                            </li>
+                            <!-- xe giường nằm -->
+                            <li class="nav-item">
+                                <a class="nav-link" id="giuongnam-tab" data-toggle="tab" href="#giuongnam" role="tab"
+                                    aria-controls="giuongnam" aria-selected="false">xe giường năm</a>
+                            </li>
+                            <!-- xe city bus -->
+                            <li class="nav-item">
+                                <a class="nav-link" id="citybus-tab" data-toggle="tab" href="#citybus" role="tab"
+                                    aria-controls="citybus" aria-selected="false">xe city bus</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- tab-content -->
+                    <div class="tab-content" id="myProductContent">
+
+                        <!-- tab xe ghế ngồi -->
+                        <div class="tab-pane fade show active" id="ghengoi" role="tabpanel"
+                            aria-labelledby="ghengoi-tab">
+                            <div class="product-container">
+                                <div class="product-item">
+                                    <div class="product-images">
+                                        <a href="#" title="">
+                                            <img src="images/icon/tb79s.png" alt="" title="THACO TB79S">
+                                        </a>
+                                    </div>
+                                    <div class="product-name">
+                                        <h3>
+                                            <a href="#">thaco tb79s</a>
+                                        </h3>
+                                    </div>
+                                    <div class="weight">
+                                        <p>Tải trọng <span>0.9</span> tấn</p>
+                                    </div>
+                                </div>
+                                <div class="product-item">
+                                    <div class="product-images">
+                                        <a href="#" title="">
+                                            <img src="images/icon/85s.png" alt="" title="MEADOW 85S">
+                                        </a>
+                                    </div>
+                                    <div class="product-name">
+                                        <h3>
+                                            <a href="#">meadow 85s</a>
+                                        </h3>
+                                    </div>
+                                    <div class="weight">
+                                        <p>Tải trọng <span>0.9</span> tấn</p>
+                                    </div>
+                                </div>
+                                <div class="product-item">
+                                    <div class="product-images">
+                                        <a href="#" title="">
+                                            <img src="images/icon/120s.png" alt="" title="BLUESKY 120S">
+                                        </a>
+                                    </div>
+                                    <div class="product-name">
+                                        <h3>
+                                            <a href="#">bluesky 120s</a>
+                                        </h3>
+                                    </div>
+                                    <div class="weight">
+                                        <p>Tải trọng <span>0.9</span> tấn</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- tab xe giường nằm -->
+                        <div class="tab-pane fade" id="giuongnam" role="tabpanel" aria-labelledby="giuongnam-tab">
+                            <div class="product-container">
+                                <p>Nội dung đang được cập nhật ...</p>
+                            </div>
+                        </div>
+
+                        <!-- tab city bus -->
+                        <div class="tab-pane fade" id="citybus" role="tabpanel" aria-labelledby="citybus-tab">
+                            <div class="product-container">
+                                <p>Nội dung đang được cập nhật ...</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- product-description -->
+        <section class="product-description">
+            <div class="container">
+                <div class="prd-container">
+
+                    <div class="product-type">
+                        <img src="images/icon/xebus.png" alt="">
+                    </div>
+        
+                    <div class="product-describe">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at justo mauris.
+                            Pellentesque facilisis magna in tempor dignissim. Quisque at malesuada mi. Nullam ac lectus
+                            libero. Suspendisse mollis fermentum purus ac laoreet. In hac habitasse platea dictumst.
+                            Suspendisse sed elit porttitor, consequat ex sit amet, congue enim. Praesent dolor lectus,
+                            varius eget aliquet et, malesuada ut risus. Praesent nec augue justo. Cras auctor lorem a dolor
+                            dapibus, eget consequat ipsum interdum. Praesent nec mi eu nisl vulputate dignissim.
+                            Etiam eu nisl gravida, porta mi quis, vehicula turpis. Aenean vehicula, massa vitae maximus
+                            ullamcorper, eros nisl facilisis orci, sit amet ullamcorper diam quam nec justo. Quisque a dui
+                            eget ipsum euismod mollis. Quisque tincidunt nec libero sit amet posuere.</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer class="main-footer">
+            <div class="container">
+                <!-- main-footer -->
+                <section class="footer">
+                    <!-- menu-footer -->
+                    <div class="menu-footer">
+                        <!-- nav menu -->
+                        <ul class="nav nav-menu-footer">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">giới thiệu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">download</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">liên hệ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">tuyển dụng</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">hình ảnh</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">video</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">tới trang</a>
+                            </li>
+                        </ul>
+                        <!-- copyright -->
+                        <div class="copyright">
+                            <p>@2019 Thaco - Trường Hải Auto</p>
+                        </div>
+                    </div>
+                    <!-- menu social -->
+                    <div class="menu-social">
+                        <ul class="nav nav-menu-social">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"><i class="fab fa-youtube"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"><i class="fab fa-google-plus-g"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"><i class="fab fa-twitter"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <!-- sticky social -->
+                <div class="stick-right">
+                    <div class="item">
+                        <div class="left-show"><img src="images/icon/phone.png" class="d-block m-auto img-fluid" alt="">
+                        </div>
+                        <div class="right-hide">KINH DOANH: <a href="tel:0933800567">0933 800 567</a></div>
+                    </div>
+                    <div class="item">
+                        <div class="left-show"><img src="images/icon/phone.png" class="d-block m-auto img-fluid" alt="">
+                        </div>
+                        <div class="right-hide">KINH DOANH: <a href="tel:0933800567">0933 800 567</a></div>
+                    </div>
+                    <div class="item">
+                        <div class="left-show"><img src="images/icon/loca.png" class="d-block m-auto img-fluid" alt="">
+                        </div>
+                        <div class="right-hide"><a href="showroom.html">ĐẠI LÝ THACO GẦN NHẤT</a></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- button-scroll-top -->
+        <div class="scroll-top">
+            <span><i class="fas fa-chevron-up"></i></span>
+        </div>
+
+
+        <!-- preloader -->
+        <div class="holder">
+            <div class="preloader">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- import file js -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/main.js"></script>
+    <!-- end import file js -->
+
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+.body-details{
+    padding-left: 9rem;
+    min-height: 800px;
+    .headline{
+        margin-bottom: 3.8rem;
+        h3{
+            @include text(2.5rem 'Arial',3rem,);
+            color: $color-pr;
+        }
+    }
+    .push-date{
+        margin-bottom: 2.85rem;
+        h6{
+            font-size: 0.875rem;
+            color: $color-sec;
+        }
+    }
+    .body{
+        padding-bottom: 5rem;
+        p{
+            img{
+                @include img-fit(null,100%,cover);
+                margin: 2rem 0;
+            }
+        }
+    }
+}

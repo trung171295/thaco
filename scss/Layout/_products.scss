@@ -1,0 +1,25 @@
+.product-category{
+    padding: 4.85rem 0;
+    border-bottom: 1px solid $color-border;
+    .product-container{
+        @include flex();
+    }
+}
+///sidebar-menu
+@import 'Pages/products/_sidebar-menu.scss';
+
+// content-product
+@import 'Pages/products/_content-product.scss';
+
+// product-decscription
+@import 'Pages/products/_product-description.scss';
+
+// product content details
+@import 'Pages/products/details/_product-content.scss';
+
+//magniflier
+@import 'Components/_magniflier.scss';
+
+
+// blogs promotion
+@import 'Pages/products/details/_blogs-promotion.scss';

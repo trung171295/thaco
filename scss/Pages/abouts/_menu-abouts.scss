@@ -1,0 +1,34 @@
+.menu-abouts{
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+    .nav-menu-abouts{
+        justify-content: center;
+        li.nav-item{
+            border-right: 1px solid $color-border;
+            
+            &:last-child{
+                border-right: none;
+            }
+
+            a.nav-link{
+                @include text(1rem 'Arial',3.4rem,uppercase,none);
+                color: #666666;
+                padding: 1rem 2.3rem;
+                @include transition(all 0.5s ease-out);
+
+                &.active{
+                    background-color: $color-pr;
+                    color: $color-w;
+                }
+
+                &:hover{
+                    @include transition(all 0.5s ease-in);
+                    background-color: $color-pr;
+                    color: $color-w;
+                }
+            }
+        }
+    }
+}

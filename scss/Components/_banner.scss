@@ -1,0 +1,27 @@
+.banner{
+    display: block;
+    position: relative;
+    @include size(100%,500px);
+    img{
+        @include img-fit(100%,100%,cover);
+        height: 100%;
+    }
+    .line{
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include size(100%,6px);
+        background-color: #ae985e;
+    }
+    //groupname-banner
+    .groupname-banner{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        @include transform(translate(-50%,-50%));
+        h1{
+            @include text(3.6rem 'Arial',auto,uppercase,none);
+            color: $color-w;
+        }
+    }
+}

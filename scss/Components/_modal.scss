@@ -1,0 +1,37 @@
+.fancybox-stage,.fancybox-infobar,.fancybox-inner,.fancybox-container.fancybox-is-open{
+    z-index: 201;
+}
+#animatedModal{
+    .accessary-popup-container{
+        @include flex();
+        padding: 7rem 2rem;
+        .images{
+            width: 50%;
+            @include flex(center,center);
+            img{
+                @include img-fit(null,100%,cover);
+                @include flex(center,center);
+            }
+        }
+        .content{
+            width: 50%;
+            padding-left: 5rem;
+            .headline{
+                margin-bottom: 4.2rem;
+                h1{
+                    @include text(1.5rem 'Arial',null,uppercase);
+                    color: $color-sec;
+                }
+            }
+            .body{
+                .param{
+                    border-bottom: 1px solid $color-border;
+                    padding: 1.8rem 0;
+                    p{
+                        @include text(1rem 'Arial',2rem);
+                    }
+                }
+            }
+        }
+    }
+}

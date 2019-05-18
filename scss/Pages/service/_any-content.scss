@@ -1,0 +1,62 @@
+.showroom-body{
+    .showroom-container{
+        #tabContentShowroom{
+            width: 75%;
+            padding-left: 9rem;
+            .any-content{
+                .group-name{
+                    margin-bottom: 2.2rem;
+                    h2{
+                        @include text(1.3rem 'Arial',2.5rem,uppercase);
+                        color: $color-pr;
+                    }
+                }
+                .any-container{
+                    .table-any{
+                        thead{
+                            text-align: center;
+                            padding: 1.2rem;
+                            background-color: #dbc7ab;
+                            tr{
+                                th{
+                                    color: $color-w;
+                                    @include text(1rem 'Arial',1.7rem);
+                                    vertical-align: middle;
+                                }
+                            }
+                        }
+                        tbody{
+                            tr{
+                                td{
+                                    padding: 1rem;
+                                    vertical-align: middle;
+                                    .table-product-img{
+                                        a{
+                                            display: block;
+                                            text-align: center;
+                                            text-decoration: none;
+                                            img{
+                                                display: block;
+                                                margin: auto;
+                                                @include img-fit(null,100%,cover);
+                                                @include size(150px,100px);
+                                                margin-bottom: 1rem;
+                                            }
+                                            span{
+                                                text-transform: uppercase;
+                                                color: $color-sec;
+                                            }
+                                        }
+                                    }
+                                    p{
+                                        text-align: center;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

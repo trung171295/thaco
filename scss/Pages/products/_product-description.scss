@@ -1,0 +1,23 @@
+.product-description{
+    padding: 6rem 0;
+    .prd-container{
+        @include flex();
+        .product-type{
+            width: 25%;
+            padding: 2rem 0;
+            img{
+                @include img-fit(mull,100%,cover);
+                display: block;
+                margin: auto;
+            }
+        }
+        .product-describe{
+            width: 75%;
+            padding-left: 4rem;
+            p{
+                @include text(1rem 'Arial',1.5rem);
+                color: $color-sec;
+            }
+        }
+    }
+}

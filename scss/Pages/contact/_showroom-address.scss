@@ -1,0 +1,62 @@
+.showroom-address{
+    padding-bottom: 8rem;
+    .sadd-container{
+        @include flex();
+        .main-showroom{
+            width: 50%;
+            .name{
+                margin-bottom: 2.285rem;
+                h1{
+                    @include text(2.35rem 'Arial',);
+                    color: #666666;
+                }
+            }
+            .address{
+                p{
+                    svg{
+                        color: $color-pr;
+                        margin-right: 1rem;
+                    }
+                    @include text(1rem 'Arial',);
+                    color: #666666;
+                    margin-bottom: 1.6rem;
+                    line-height: 2rem;
+                    a{
+                        color: #666666;
+                    }
+                }
+            }
+        }
+        .phone-support{
+            margin-top: 12rem;
+            width: 50%;
+            padding: 0 4rem;
+            @include flex();
+            flex-wrap: wrap;
+            .phone-item{
+                display: block;
+                width: calc(100% / 2);
+                .postion-support{
+                    margin-bottom: 1rem;
+                    p{
+                        @include text(bold 1.285rem 'Arial',);
+                        color: #666666;
+                    }
+                }
+                .number{
+                    p{
+                        svg{
+                            margin-right: 1rem;
+                            color:$color-pr;
+                        }
+                        @include text(1rem 'Arial',);
+                        a{
+                            color: #666666;
+                            opacity: 0.5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+////something
+.something-body{
+    width: 100%;
+    display: block;
+    .sb-c{
+        @include flex();
+        padding: 4.5rem 0;
+        .sidebar-blogs{
+            display: block;
+            width: 25%;
+        }
+    
+        .body-details{
+            display: block;
+            width: 75%;
+        }
+    }
+}
+
+@import 'Pages/blogs/blogs-detail/_sidebar.scss';
+@import 'Pages/blogs/blogs-detail/_body-detail.scss';
+

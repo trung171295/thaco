@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Demo</title>
+    <link rel="Shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animated.css">
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- header -->
+        <header class="main-header">
+            <div class="container">
+
+                <!-- header-top -->
+                <div class="header-top">
+
+                    <!-- language -->
+                    <div class="language">
+                        <ul class="nav nav-lang">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">en</a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link active">vi</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- search-button -->
+                    <div class="search-button">
+                        <a href="#">
+                            <span><i class="fas fa-search"></i></span>
+                        </a>
+                        <div class="search-content">
+                            <input type="text" class="form-control" name="" id="search"
+                                placeholder="Tìm thông tin tại đây">
+                            <button class="btn-icon-search" type="submit"><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- main-menu -->
+                <div class="main-menu">
+
+                    <!-- logo -->
+                    <div class="logo">
+                        <a href="#">
+                            <img src="images/logo/logo.png" alt="">
+                        </a>
+                    </div>
+
+                    <!-- logo-department -->
+                    <div class="logo-department">
+                        <a href="#">
+                            <img src="images/logo/logo_showroom.png" alt="">
+                        </a>
+                    </div>
+
+                    <!-- menu primary -->
+                    <div class="nav-menu">
+                        <ul class="nav nav-main-menu">
+
+                            <!-- xe tải -->
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">xe tải</a>
+                                <!-- if has child menu -->
+                                <div class="has-child-menu car">
+                                    <div class="container">
+                                        <div class="list-type">
+                                            <div class="item-type">
+                                                <img src="images/icon/car1.png" alt="">
+                                            </div>
+                                            <ul class="nav nav-child-menu-car">
+                                                <div class="item-child-menu">
+                                                    <a href="#">
+                                                        <img src="images/brands/fuso.png" alt="">
+                                                        <span></span>
+                                                    </a>
+                                                </div>
+                                                <div class="item-child-menu">
+                                                    <a href="#">
+                                                        <img src="images/brands/foton.png" alt="">
+                                                        <span></span>
+                                                    </a>
+                                                </div>
+                                                <div class="item-child-menu">
+                                                    <a href="#">
+                                                        <img src="images/brands/kia.png" alt="">
+                                                        <span></span>
+                                                    </a>
+                                                </div>
+                                                <div class="item-child-menu">
+                                                    <a href="#">
+                                                        <img src="images/brands/thaco_towner.png" alt="">
+                                                        <span></span>
+                                                    </a>
+                                                </div>
+                                                <div class="item-child-menu">
+                                                    <a href="#">
+                                                        <img src="images/brands/xcd.png" alt="">
+                                                        <span></span>
+                                                    </a>
+                                                </div>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <!-- xe bus -->
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">xe bus</a>
+                                <!-- if has child menu -->
+                                <div class="has-child-menu car-bus">
+                                    <div class="container">
+                                        <div class="list-type">
+                                            <!-- menu tab xe bus -->
+                                            <div class="menu-type">
+                                                <ul class="nav nav-tabs" id="busMenu" role="tablist">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link active" id="bus-seat" data-toggle="tab"
+                                                            href="#seat" role="tab" aria-controls="seat"
+                                                            aria-selected="true">xe ghế ngồi</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" id="bus-located" data-toggle="tab"
+                                                            href="#located" role="tab" aria-controls="located"
+                                                            aria-selected="false">xe giường nằm</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" id="bus-city" data-toggle="tab"
+                                                            href="#bcity" role="tab" aria-controls="bcity"
+                                                            aria-selected="false">city bus</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- tab content -->
+                                            <div class="tabcontainer">
+                                                <div class="tab-content" id="busMenuContent">
+
+                                                    <!-- tab xe ghế ngồi -->
+                                                    <div class="tab-pane fade show active" id="seat" role="tabpanel"
+                                                        aria-labelledby="bus-seat">
+                                                        <ul class="nav nav-child-menu-bus">
+                                                            <div class="item-child-menu">
+                                                                <a href="#">
+                                                                    <img src="images/icon/tb79s.png" alt="">
+                                                                    <span>thaco tb79s</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="item-child-menu">
+                                                                <a href="#">
+                                                                    <img src="images/icon/85s.png" alt="">
+                                                                    <span>meadow 85s</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="item-child-menu">
+                                                                <a href="#">
+                                                                    <img src="images/icon/120s.png" alt="">
+                                                                    <span>bluesky 120s</span>
+                                                                </a>
+                                                            </div>
+                                                        </ul>
+                                                    </div>
+
+                                                    <!-- tab xe giường nằm -->
+                                                    <div class="tab-pane fade" id="located" role="tabpanel"
+                                                        aria-labelledby="bus-located">
+                                                        <ul class="nav nav-child-menu-bus">
+                                                            <div class="item-child-menu">
+                                                                <a href="#">
+                                                                    <img src="images/icon/tb79s.png" alt="">
+                                                                    <span>thaco tb79s</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="item-child-menu">
+                                                                <a href="#">
+                                                                    <img src="images/icon/85s.png" alt="">
+                                                                    <span>meadow 85s</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="item-child-menu">
+                                                                <a href="#">
+                                                                    <img src="images/icon/120s.png" alt="">
+                                                                    <span>bluesky 120s</span>
+                                                                </a>
+                                                            </div>
+                                                        </ul>
+                                                    </div>
+
+                                                    <!-- tab xe city bus -->
+                                                    <div class="tab-pane fade" id="bcity" role="tabpanel"
+                                                        aria-labelledby="bus-city">
+                                                        <ul class="nav nav-child-menu-bus">
+                                                            <div class="item-child-menu">
+                                                                <a href="#">
+                                                                    <img src="images/icon/tb79s.png" alt="">
+                                                                    <span>thaco tb79s</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="item-child-menu">
+                                                                <a href="#">
+                                                                    <img src="images/icon/85s.png" alt="">
+                                                                    <span>meadow 85s</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="item-child-menu">
+                                                                <a href="#">
+                                                                    <img src="images/icon/120s.png" alt="">
+                                                                    <span>bluesky 120s</span>
+                                                                </a>
+                                                            </div>
+                                                        </ul>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <!-- dịch vụ -->
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">dịch vụ</a>
+                                <!-- if has child menu -->
+                                <div class="has-child-menu">
+                                    <div class="container">
+                                        <ul class="nav nav-child-menu">
+                                            <div class="item-child-menu">
+                                                <a href="#">
+                                                    <img src="images/icon/bh.png" alt="">
+                                                    <span>bảo hành bảo dưỡng</span>
+                                                </a>
+                                            </div>
+                                            <div class="item-child-menu">
+                                                <a href="#">
+                                                    <img src="images/icon/sc.png" alt="">
+                                                    <span>dịch vụ sữa chữa</span>
+                                                </a>
+                                            </div>
+                                            <div class="item-child-menu">
+                                                <a href="#">
+                                                    <img src="images/icon/lk.png" alt="">
+                                                    <span>linh kiện - phụ tùng</span>
+                                                </a>
+                                            </div>
+                                            <div class="item-child-menu">
+                                                <a href="#">
+                                                    <img src="images/icon/mlpp.png" alt="">
+                                                    <span>mạng lưới phản hồi</span>
+                                                </a>
+                                            </div>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <!-- phụ tùng -->
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">phụ tùng</a>
+                            </li>
+
+                            <!-- tin tức -->
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">tin tức</a>
+                            </li>
+
+                            <!-- hỗ trợ -->
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">hỗ trợ</a>
+                                <!-- if has child menu -->
+                                <div class="has-child-menu">
+                                    <div class="container">
+                                        <ul class="nav nav-child-menu">
+                                            <div class="item-child-menu">
+                                                <a href="#">
+                                                    <img src="images/icon/tv.png" alt="">
+                                                    <span>tư vấn sử dụng</span>
+                                                </a>
+                                            </div>
+                                            <div class="item-child-menu">
+                                                <a href="#">
+                                                    <img src="images/icon/tc.png" alt="">
+                                                    <span>tư vấn tài chính</span>
+                                                </a>
+                                            </div>
+                                            <div class="item-child-menu">
+                                                <a href="#">
+                                                    <img src="images/icon/radio.png" alt="">
+                                                    <span>tư vấn trực tuyến trên radio</span>
+                                                </a>
+                                            </div>
+                                            <div class="item-child-menu">
+                                                <a href="#">
+                                                    <img src="images/icon//hd.png" alt="">
+                                                    <span>hỏi đáp</span>
+                                                </a>
+                                            </div>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <!-- icon-bar -->
+                    <div class="icon-bar">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+
+        <section class="banner">
+            <img src="images/banner/4THACOTAI-SHOWROOM_DICH-VU_03.jpg" alt="">
+        </section>
+
+        <!-- breadcrumb -->
+        <section class="br">
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Trang Chủ</a></li>
+                    <li class="breadcrumb-item"><a href="#">Dịch vụ</a></li>
+                    <li class="breadcrumb-item"><a href="#">Bảo hành bảo dưỡng</a></li>
+                    <li class="breadcrumb-item active disabled" aria-current="page"><a href="#">Thông tin chung</a></li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- menu tab showrooms -->
+        <div class="menu-showroom-type">
+            <div class="container">
+                <ul class="nav nav-tabs" id="tabShowroom" role="tablist">
+                    <!-- tab xe tải -->
+                    <li class="nav-item">
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
+                            <img src="images/icon/xt1.png" alt="">
+                            <span>xe tải</span>
+                        </a>
+                    </li>
+                    <!-- tab xe bus -->
+                    <li class="nav-item">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">
+                            <img src="images/icon/Vector Smart Object.png" alt="">
+                            <span>xe bus</span>
+                        </a>
+                    </li>
+                    <!-- tab đại lý -->
+                    <li class="nav-item">
+                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">
+                            <img src="images/icon/dl.png" alt="">
+                            <span>đại lý</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- showroom-body -->
+        <section class="showroom-body">
+            <div class="container">
+                <div class="showroom-container">
+                    
+                <!-- sidebar -->
+                <section class="sidebar-showroom">
+                        <div class="side-group">
+                                <div class="side-group-name">
+                                    <h3>bảo hành bảo dưỡng</h3>
+                                </div>
+                                <div id="sidebar" class="sidebar-wrapper">
+                                    <div class="sidebar-content">
+                                        <div class="sidebar-menu">
+                                            <ul class="nav-sidebar-menu">
+                                                <li class="sidebar-dropdown">
+                                                    <a href="#" class="nav-link">
+                                                        thông tin chung
+                                                    </a>
+                                                </li>
+                                                <li class="sidebar-dropdown">
+                                                    <a href="#" class="nav-link active">
+                                                       bảo hành
+                                                    </a>
+                                                    <div class="sidebar-submenu">
+                                                        <ul class="nav-submenu">
+                                                            <li class="sidebar-item">
+                                                                <a href="#" class="nav-sublink active">Thời gian bảo hành</a>
+                                                            </li>
+                                                            <li class="sidebar-item">
+                                                                <a href="#" class="nav-sublink">Những gì không được bảo hành</a>
+                                                            </li>
+                                                            <li class="sidebar-item">
+                                                                <a href="#" class="nav-sublink">Trách nhiệm của chủ xe</a>
+                                                            </li>
+                                                            <li class="sidebar-item">
+                                                                <a href="#" class="nav-sublink">Chi tiết giới hạn bảo hành</a>
+                                                            </li>
+                                                            <li class="sidebar-item">
+                                                                <a href="#" class="nav-sublink">Chi tiết bảo hành đặc biệt</a>
+                                                            </li>
+                                                            <li class="sidebar-item">
+                                                                <a href="#" class="nav-sublink">Bảo hành phụ tùng</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li class="sidebar-dropdown">
+                                                    <a href="#" class="nav-link">
+                                                       bảo dưỡng
+                                                    </a>
+                                                    <div class="sidebar-submenu">
+                                                            <ul class="nav-submenu">
+                                                                <li class="sidebar-item">
+                                                                    <a href="#" class="nav-sublink">Thời gian bảo hành</a>
+                                                                </li>
+                                                                <li class="sidebar-item">
+                                                                    <a href="#" class="nav-sublink">Những gì không được bảo hành</a>
+                                                                </li>
+                                                                <li class="sidebar-item">
+                                                                    <a href="#" class="nav-sublink">Trách nhiệm của chủ xe</a>
+                                                                </li>
+                                                                <li class="sidebar-item">
+                                                                    <a href="#" class="nav-sublink">Chi tiết giới hạn bảo hành</a>
+                                                                </li>
+                                                                <li class="sidebar-item">
+                                                                    <a href="#" class="nav-sublink">Chi tiết bảo hành đặc biệt</a>
+                                                                </li>
+                                                                <li class="sidebar-item">
+                                                                    <a href="#" class="nav-sublink">Bảo hành phụ tùng</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                </li>
+                                                <li class="sidebar-dropdown">
+                                                        <a href="#" class="nav-link">
+                                                            chăm sóc chiếc xe của bạn
+                                                        </a>
+                                                    </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="side-group">
+                            <div class="side-group-name">
+                                <h3>hệ thống xưởng dịch vụ</h3>
+                            </div>
+                            <div id="sidebar" class="sidebar-wrapper">
+                                <div class="sidebar-content">
+                                    <div class="sidebar-menu">
+                                        <ul class="nav-sidebar-menu">
+                                            <li class="sidebar-dropdown">
+                                                <a href="#" class="nav-link">
+                                                    danh sách trạm dịch vụ cả nước
+                                                </a>
+                                            </li>
+                                            <li class="sidebar-dropdown">
+                                                    <a href="#" class="nav-link">
+                                                        trung tâm sữa chửa xe bus miền trung
+                                                    </a>
+                                                </li>
+                                                <li class="sidebar-dropdown">
+                                                        <a href="#" class="nav-link">
+                                                            danh sách  các trạm dịch vụ sữa chữa xe bus
+                                                        </a>
+                                                    </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+    
+                    <!-- tab-content -->
+                    <section class="tab-content" id="tabContentShowroom">
+    
+                        <!-- tab-content xe tải -->
+                        <section class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <section class="any-content">
+                                <div class="group-name">
+                                    <h2>thời gian bảo hành</h2>
+                                </div>
+                                <div class="any-container">
+                                    <table class="table table-bordered table-any">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Sản phẩm</th>
+                                                <th scope="col">Thời hạn bảo hành chung</th>
+                                                <th scope="col">Thời hạn bảo hành các chi tiết cở bản</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="table-product-img">
+                                                        <a href="#">
+                                                                <img src="images/product/4THACOTAI-SHOWROOM_DICH-VU_03.jpg" alt="">
+                                                                <span>thaco forland</span>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <p>12 tháng hoặc 20.000 km</p>
+                                                    <p>(Tùy theo điều kiện nào đến trước)</p>
+                                                </td>
+                                                <td>
+                                                    <p>9 tháng hoặc 15.000 km</p>
+                                                    <p>(Tùy theo điều kiện nào đến trước)</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="table-product-img">
+                                                            <a href="#">
+                                                                    <img src="images/product/4THACOTAI-SHOWROOM_DICH-VU_07.jpg" alt="">
+                                                                    <span>thaco forland</span>
+                                                            </a>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <p>12 tháng hoặc 20.000 km</p>
+                                                    <p>(Tùy theo điều kiện nào đến trước)</p>
+                                                </td>
+                                                <td>
+                                                    <p>9 tháng hoặc 15.000 km</p>
+                                                    <p>(Tùy theo điều kiện nào đến trước)</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="table-product-img">
+                                                            <a href="#">
+                                                                    <img src="images/product/4THACOTAI-SHOWROOM_DICH-VU_03.jpg" alt="">
+                                                                    <span>thaco forland</span>
+                                                            </a>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <p>12 tháng hoặc 20.000 km</p>
+                                                    <p>(Tùy theo điều kiện nào đến trước)</p>
+                                                </td>
+                                                <td>
+                                                    <p>9 tháng hoặc 15.000 km</p>
+                                                    <p>(Tùy theo điều kiện nào đến trước)</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="table-product-img">
+                                                            <a href="#">
+                                                                    <img src="images/product/4THACOTAI-SHOWROOM_DICH-VU_07.jpg" alt="">
+                                                                    <span>thaco forland</span>
+                                                            </a>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <p>12 tháng hoặc 20.000 km</p>
+                                                    <p>(Tùy theo điều kiện nào đến trước)</p>
+                                                </td>
+                                                <td>
+                                                    <p>9 tháng hoặc 15.000 km</p>
+                                                    <p>(Tùy theo điều kiện nào đến trước)</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </section>
+                        </section>
+    
+                        <!-- tab-content xe bus -->
+                        <section class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <section class="any-content">
+                                <div class="group-name">
+                                    <h2>thời gian bảo hành</h2>
+                                </div>
+                                <div class="any-container">
+                                    <p>Chưa có nội dung ...</p>
+                                </div>
+                            </section>
+                        </section>
+    
+                        <!-- tab-content đại lý -->
+                        <section class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                            <section class="any-content">
+                                <div class="group-name">
+                                    <h2>thời gian bảo hành</h2>
+                                </div>
+                                <div class="any-container">
+                                    <p>Chưa có nội dung ...</p>
+                                </div>
+                            </section>
+                        </section>
+    
+                    </section>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer class="main-footer">
+            <div class="container">
+                <!-- main-footer -->
+                <section class="footer">
+                    <!-- menu-footer -->
+                    <div class="menu-footer">
+                        <!-- nav menu -->
+                        <ul class="nav nav-menu-footer">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">giới thiệu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">download</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">liên hệ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">tuyển dụng</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">hình ảnh</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">video</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">tới trang</a>
+                            </li>
+                        </ul>
+                        <!-- copyright -->
+                        <div class="copyright">
+                            <p>@2019 Thaco - Trường Hải Auto</p>
+                        </div>
+                    </div>
+                    <!-- menu social -->
+                    <div class="menu-social">
+                        <ul class="nav nav-menu-social">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"><i class="fab fa-youtube"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"><i class="fab fa-google-plus-g"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"><i class="fab fa-twitter"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <!-- sticky social -->
+                <div class="stick-right">
+                    <div class="item">
+                        <div class="left-show"><img src="images/icon/phone.png" class="d-block m-auto img-fluid" alt="">
+                        </div>
+                        <div class="right-hide">KINH DOANH: <a href="tel:0933800567">0933 800 567</a></div>
+                    </div>
+                    <div class="item">
+                        <div class="left-show"><img src="images/icon/phone.png" class="d-block m-auto img-fluid" alt="">
+                        </div>
+                        <div class="right-hide">KINH DOANH: <a href="tel:0933800567">0933 800 567</a></div>
+                    </div>
+                    <div class="item">
+                        <div class="left-show"><img src="images/icon/loca.png" class="d-block m-auto img-fluid" alt="">
+                        </div>
+                        <div class="right-hide"><a href="showroom.html">ĐẠI LÝ THACO GẦN NHẤT</a></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- button-scroll-top -->
+        <div class="scroll-top">
+            <span><i class="fas fa-chevron-up"></i></span>
+        </div>
+
+        <!-- preloader -->
+        <div class="holder">
+            <div class="preloader">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- import file js -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/main.js"></script>
+    <!-- end import file js -->
+
+</body>
+
+</html>

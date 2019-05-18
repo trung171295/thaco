@@ -1,0 +1,92 @@
+@media (min-width: 1440px!important) {
+	.container {
+		max-width: 1200px !important;
+	}
+}
+
+// scrop-top
+.scroll-top{
+  @include size(50px,50px);
+  border-radius: 50%;
+  border: 1px solid $color-border;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20%;
+  right: 2.7rem;
+  visibility: hidden;
+  text-align: center;
+  line-height: 50px;
+  opacity: 0;
+  @include transition(all 0.5s ease-out);
+  span{
+    svg{
+      font-size: 1rem;
+      color: $color-border;
+    }
+  }
+  &.active{
+    @include transition(all 0.5s ease-in);
+    visibility: visible;
+    opacity: 1;
+  }
+}
+// sticky social
+.stick-right{
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  bottom: 30%;
+  right: 0;
+  z-index: 199;
+  transform: translateY(-50%);
+  pointer-events: none;
+  @include transition(all 0.5s ease-out);
+  &.show{
+    @include transition(all 0.5s ease-in);
+    visibility: visible;
+    opacity: 1;
+  }
+  .item{
+    &:hover{
+      right: 0;
+      .left-show{
+        background-color: $color-pr;
+      }
+    }
+    border-radius: 5px 0 0 5px;
+    pointer-events: all;
+    background-color: $color-pr;
+    cursor: pointer;
+    margin-bottom: 2px;
+    transition: right .4s ease;
+    position: relative;
+    right: calc(-100% + 50px);
+    display: flex;
+    flex-wrap: nowrap;
+    height: 50px;    
+    .left-show{
+      border-radius: 5px 0 0 5px;
+      display: flex;
+      width: 50px;
+      background-color: $color-sec;
+      transition: .4s ease;
+    }
+    .right-hide{
+      text-align: center;
+      display: flex;
+      padding: 25px 1rem;
+      color: #fff;
+      line-height: 0;
+      background-color: $color-pr;
+      a{
+        color: #fff;
+        text-decoration: none;        
+        padding-left: 5px;
+      }
+      a[href^="tel:"]{
+        font-weight: bold;
+        font-size: 1.3rem;
+      }
+    }
+  }
+}

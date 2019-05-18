@@ -1,0 +1,90 @@
+.main-footer {
+	display: block;
+	position: relative;
+	width: 100%;
+	background-color: $color-pr;
+	.footer {
+		@include flex();
+		padding: 2.7rem 0;
+		.menu-footer {
+			// menu footerr
+			.nav-menu-footer {
+				margin-bottom: 1.5rem;
+				li.nav-item {
+                    padding: 0.25rem 1.125rem;
+                    border-right: 1px solid $color-border;
+					a.nav-link {
+						@include text(1rem 'Arial', auto, uppercase, none);
+						color: $color-w;
+						padding: 0;
+                        @include transition(all 0.4s ease-out);
+                        position: relative;
+						&:before {
+							@include before('', 100%, 0);
+							@include size(100%, 1px);
+							background-color: $color-w;
+							@include transform(scaleX(0));
+							transform-origin: right;
+							opacity: 0.6;
+							@include transition(transform 0.7s cubic-bezier(0.19, 1, 0.22, 1));
+                        }
+                        &:hover {
+                            @include transition(all 0.4s ease-in);
+                            &::before {
+                                opacity: 1;
+                                @include transform(scaleX(1));
+                                transform-origin: left;
+                            }
+                        }
+					}
+					&:first-child {
+						padding-left: 0;
+						a.nav-link {
+							padding-left: 0;
+						}
+					}
+					&:last-child {
+						border-right: none;
+                    }
+                    &.active{
+                        a.nav-link{
+                            &::before {
+                                opacity: 1;
+                                @include transform(scaleX(1));
+                                transform-origin: left;
+                            }
+                        }
+                    }
+				}
+			}
+			// copyright
+			.copyright {
+				p {
+					@include text(1rem 'Arial', 1.2rem);
+					color: $color-w;
+				}
+			}
+		}
+		.menu-social {
+			margin-left: auto;
+			.nav-menu-social {
+				li.nav-item {
+					@include size(36px, 36px);
+					@include flex(center, center);
+					border-radius: 50%;
+					border: 1px solid $color-w;
+					margin-right: 1rem;
+					a.nav-link {
+						color: $color-w;
+					}
+					&:last-child {
+						margin-right: 0;
+					}
+				}
+			}
+		}
+	}
+	.social-fixed {
+		display: none;
+	}
+}

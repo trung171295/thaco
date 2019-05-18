@@ -1,0 +1,363 @@
+.products-content {
+	padding: 6rem 0;
+	width: 100%;
+	display: block;
+	border-bottom: 1px solid $color-border;
+	// ---------------------------headline
+	.headline {
+		margin-bottom: 1.785rem;
+		text-align: center;
+		h1 {
+			@include text(2.85rem 'Arial', 1.6rem, uppercase, none);
+			color: $color-sec;
+		}
+	}
+	// ----------------------------summary
+	.summary {
+		margin-bottom: 4.8rem;
+	}
+	// -----------------------------menu product
+	.menu-product {
+		display: block;
+		width: 100%;
+		@include transition(all 0.4s ease-out);
+		&.is-fixed{
+			position: fixed;
+			top: 0;
+			left: 0;
+			@include size(100%,100px);
+			@include flex(center,center);
+			@include box-shadow(0.5rem,0,1rem,#000000);
+			@include transition(all 0.4s ease-in);
+			background-color: $color-w;
+			z-index: 200;
+			.nav-menu-product{
+				justify-content:center;
+			}
+		}
+		.nav-menu-product {
+			width: 100%;
+			justify-content: flex-end;
+			li.nav-item {
+				padding: 0.5rem 1rem;
+				a.nav-link {
+					@include text(1rem 'Arial', 1.6rem, uppercase);
+					color: #a8a8a8;
+					padding: 0;
+					position: relative;
+					@include transition(all 0.4s ease-out);
+					&:before {
+						@include before('', 100%, 0);
+						@include size(100%, 1px);
+						background-color: #9d8457;
+						@include transform(scaleX(0));
+						transform-origin: right;
+						opacity: 0.6;
+						@include transition(transform 0.7s cubic-bezier(0.19, 1, 0.22, 1));
+					}
+					&.active {
+						color: #9d8457;
+						&::before {
+							opacity: 1;
+							@include transform(scaleX(1));
+							transform-origin: left;
+						}
+					}
+					&:hover {
+						@include transition(all 0.4s ease-in);
+						color: #9d8457;
+						&::before {
+							opacity: 1;
+							@include transform(scaleX(1));
+							transform-origin: left;
+						}
+					}
+				}
+				&:last-child {
+					a.nav-link {
+						color: $color-sec;
+						text-transform: none;
+						padding-right: 0;
+					}
+				}
+			}
+		}
+	}
+	// ------------------------------body
+	.body {
+		#furniture,
+		#engine,
+		#container {
+			width: 100%;
+			background-color: #f9f9f9;
+		}
+		.block-content {
+			width: 100%;
+			padding: 3.5rem 0;
+			.name {
+				text-align: center;
+				margin-bottom: 2.5rem;
+				h3 {
+					@include text(2.85rem 'Arial', null);
+					color: $color-sec;
+				}
+				img {
+					margin-left: 1rem;
+				}
+			}
+
+			.gallery {
+				.gallery-top {
+					width: 100%;
+					.swiper-slide {
+						.sw-item {
+							.sw-item-img {
+								@include size(100%, 525px);
+								position: relative;
+								img {
+									@include size(100%, 100%);
+									@include img-fit(null, 100%, cover);
+								}
+							}
+							.sw-item-headline {
+								position: absolute;
+								bottom: 0;
+								left: 0;
+								width: 100%;
+								padding: 2rem 2.25rem;
+								vertical-align: middle;
+								background-color: rgba($color: #000000, $alpha: 0.5);
+								h3 {
+									@include text(1rem 'Arial');
+									color: $color-w;
+								}
+							}
+						}
+					}
+				}
+				.gallery-thumbs {
+					width: 100%;
+					background-color: #161514;
+					padding-top: 2.14rem;
+					padding-bottom: 4.3rem;
+					@include box-sizing(content-box);
+					.swiper-slide {
+						img {
+							@include size(355px, 175px);
+							@include img-fit(null, 100%, cover);
+						}
+					}
+					.swiper-pagination {
+						bottom: 2.14rem;
+						.swiper-pagination-bullet {
+							background-color: #c8cacb;
+						}
+						.swiper-pagination-bullet-active {
+							background-color: $color-w;
+						}
+					}
+				}
+			}
+
+			.images-seat {
+				@include flex(center);
+				img {
+					@include img-fit(null, 100%, cover);
+					margin-bottom: 2rem;
+				}
+			}
+
+			.engine-content {
+				@include flex();
+				padding: 4rem 0;
+				.engine-info {
+					width: 50%;
+					padding: 4rem 0;
+					padding-right: 4rem;
+					.name {
+						margin-bottom: 2rem;
+						text-align: left;
+						h3 {
+							@include text(bold 1.4rem 'Arial');
+							color: $color-sec;
+						}
+					}
+				}
+				.engine-img {
+					width: 50%;
+					@include flex(center, center);
+					img {
+						@include img-fit(null, 100%, cover);
+					}
+				}
+			}
+
+			.table-list-param {
+				#accordionListParam {
+					border-left: 1px solid $color-border;
+					border-right: 1px solid $color-border;
+					.param-item {
+						.param-item-header {
+							padding: 1.7rem 2rem;
+							border-top: 1px solid $color-border;
+							.param-title {
+								@include size(100%, 100%);
+								cursor: pointer;
+								position: relative;
+								&::before{
+									@include before(
+										'',
+										50%,
+										null,
+										1%,
+										null
+									);
+									width: 1rem;
+									height: 1rem;
+									background-image: url(../images/icon/arr_m2.png);
+									background-position: center;
+									background-repeat: no-repeat;
+									@include transform(translateY(-50%));
+									@include transition(transform 0.5s ease-out);
+								}
+								h3 {
+									@include text(1rem 'Arial', 1.5rem, uppercase);
+									color: $color-sec;
+								}
+							}
+							.param-title[aria-expanded="true"]{
+								&::before{
+								   transform: translateY(-50%);
+								   background-image:  url(../images/icon/arr_m.png);
+								   color: $color-border;
+								   @include transition(transform 0.5s ease-in);
+								}
+							}
+						}
+						&:last-child {
+							.param-item-header {
+								border-bottom: 1px solid $color-border;
+							}
+							.collapse{
+								&.show{
+									@include transition(all 0.4s ease-in);
+								}
+								@include transition(all 0.4s ease-out);
+							}
+							.param-item-body {
+								border-bottom: 1px solid $color-border;
+							}
+						}
+						.param-item-body {
+							.tab-content {
+								position: relative;
+								padding: 1rem 4.5rem;
+								&:before {
+									@include before('', 0, 0);
+									@include size(100%, 1px);
+									background-color: $color-border;
+								}
+								.table {
+									width: 100%;
+									tbody {
+										tr {
+											td {
+												border: none;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+
+			.video {
+				display: block;
+				width: 100%;
+				overflow: hidden;
+				position: relative;
+				cursor: pointer;
+				&:hover {
+					cursor: pointer;
+					&:before {
+						filter: blur(5px);
+					}
+					&:after {
+						@include box-shadow(1px, 0px, 12px, $color-border, false);
+					}
+				}
+				&:before {
+					@include before('', 0, 0);
+					@include size(100%, 100%);
+					overflow: hidden;
+					background-color: rgba($color: #000000, $alpha: 0.6);
+				}
+				&:after {
+					@include before('\f04b', 50%, 50%);
+					@include transform(translate(-50%, -50%));
+					@include size(6rem, 6rem);
+					@include flex(center, center);
+					font-family: 'Font Awesome 5 Free';
+					font-weight: 900;
+					color: $color-w;
+					font-size: 3rem;
+					border-radius: 50%;
+					border: 1px solid $color-w;
+					cursor: pointer;
+				}
+				img {
+					@include img-fit(100%, cover);
+					height: 500px;
+				}
+			}
+
+			#list-document {
+				border: 1px solid $color-border;
+				thead {
+					background-color: $color-pr;
+					border-bottom: 1px solid $color-border;
+					tr {
+						th {
+							@include text(1.785rem 'Arial');
+							color: $color-w !important;
+							vertical-align: middle !important;
+							padding: 0.85rem 3rem !important;
+						}
+					}
+				}
+				tbody {
+					tr {
+						td {
+							padding: 2.285rem 3.285rem;
+							vertical-align: middle;
+							@include text(1.4285rem 'Arial');
+							color: $color-sec;
+							a {
+								text-decoration: none;
+								@include text(1.4285rem 'Arial');
+								color: $color-sec;
+								@include transition(all 0.4s ease-out);
+								&:hover {
+									color: $color-pr;
+									@include transition(all 0.4s ease-in);
+								}
+							}
+							img {
+								@include size(44px, 48px);
+								@include img-fit(null, 100%, cover);
+								&:hover {
+									-webkit-filter: grayscale(100%) brightness(30%) sepia(100%) hue-rotate(-180deg)
+										saturate(700%) contrast(0.8);
+									filter: grayscale(100%) brightness(30%) sepia(100%) hue-rotate(-180deg)
+										saturate(700%) contrast(0.8);
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,71 @@
+#myProductContent{
+	display: block;
+	width: 75%;
+	padding-left: 9rem;
+	min-height: 300px;
+	.product-container{
+		@include grid(
+			repeat(3,1fr),
+			auto
+		);
+		grid-column-gap: 2rem;
+		grid-row-gap: 3rem; 
+		width: 100%;
+		.product-item{
+			width: 100%;
+			overflow: hidden;
+			&:hover{
+				.product-images{
+					img{
+						@include transform(scale(1.1));
+						@include transition(all 0.4s ease-in);
+					}
+				}
+				.product-name{
+					h3{
+						a{
+							color: #ae985e;
+							@include transition(all 0.4s ease-in);
+						}
+					}
+				}
+			}
+			.product-images{
+				display: block;
+				margin: 0 auto;
+				margin-bottom: 1.5rem;
+				img{
+					@include img-fit(null,100%,cover);
+					@include transition(all 0.4s ease-out);
+					max-height: 150px;
+					display: block;
+					margin: 0 auto;
+				}
+			}
+			.product-name{
+				display: block;
+				text-align: center;
+				margin-bottom: 1rem;
+				h3{
+					@include text(bold 1.6rem 'Arial',null,uppercase);
+					a{
+						@include transition(all 0.4s ease-out);
+						text-decoration: none;
+						color: #666666;
+					}
+				}
+			}
+			.weight{
+				display: block;
+				text-align: center;
+				p{
+					color: $color-sec;
+				}
+			}
+
+			&:last-child{
+				margin-right: 0;
+			}
+		}
+	}
+}

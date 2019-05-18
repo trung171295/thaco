@@ -1,0 +1,34 @@
+.list-accesary{
+    width: 80%;
+    min-height: 300px;
+    padding-left: 9rem;
+    @include grid(
+        repeat(3,minmax(200px,1fr)),
+        auto
+    );
+    grid-gap: 2rem;
+    .accessary-item{
+        width: 100%;
+        display: block;
+        .accesary-item-img{
+            @include flex(center,center);
+            height: 120px;
+            margin-bottom: 2rem;
+            img{
+                @include img-fit(null,100%,cover);
+                max-height: 120px;
+            }
+        }
+        .accesary-item-name{
+            text-align: center;
+            p{
+                @include text(1rem 'Arial',);
+                color: $color-sec;
+                a{
+                    color: $color-sec;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

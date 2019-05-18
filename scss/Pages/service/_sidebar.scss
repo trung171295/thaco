@@ -1,0 +1,75 @@
+.showroom-body{
+    padding: 4rem 0;
+    display: block;
+    .showroom-container{
+        @include flex();
+        .sidebar-showroom{
+            width: 25%;
+            margin-top: 5rem;
+            display: block;
+            .side-group{
+                margin-bottom: 2.85rem;
+                .side-group-name{
+                    padding: 0.8rem 0;
+                    width: 100%;
+                    text-align: center;
+                    background-color: $color-pr;
+                    h3{
+                        @include text(1.2rem 'Arial',2.5rem,uppercase,);
+                        color: $color-w;
+                    }
+                }
+                #sidebar{
+                    .sidebar-menu{
+                        .nav-sidebar-menu{
+                            list-style-type: none;
+                            width: 100%;
+                            display: block;
+                            padding-left: 0;
+                            li.sidebar-dropdown{
+                                width: 100%;
+                                border-bottom: 1px solid $color-border;
+                                a.nav-link{
+                                    padding: 1.2rem 1.7rem;
+                                    width: 100%;
+                                    @include text(1rem 'Arial',1.7rem,uppercase);
+                                    @include transition(all 0.4s ease-out);
+                                    color: $color-sec;;
+                                    &.active{
+                                        color: $color-sec;
+                                        border-bottom: 1px solid $color-border;
+                                    }
+                                    &:hover{
+                                        @include transition(all 0.4s ease-in);
+                                        color: $color-pr;
+                                    }
+                                }
+                                .sidebar-submenu{
+                                    width: 100%;
+                                    display: none;
+                                    .nav-submenu{
+                                        padding: 1.5rem 1.7rem;
+                                        list-style-type: none;
+                                        li.sidebar-item{
+                                            a.nav-sublink{
+                                                padding:0;
+                                                padding-bottom: 1.5rem;
+                                                width: 100%;
+                                                text-decoration: none;
+                                                @include text(1rem 'Arial',2.5rem);
+                                                color: #666666;
+                                                &.active{
+                                                    color: $color-pr;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

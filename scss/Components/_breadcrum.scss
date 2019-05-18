@@ -1,0 +1,29 @@
+.br{
+    display: block;
+    width: 100%;
+    .breadcrumb{
+        background-color: transparent!important;
+        padding: 1.6rem 0;
+        margin-bottom: 0;
+        li.breadcrumb-item{
+            &:first-child{
+                &:before{
+                    display: none;
+                }
+            }
+            &:before{
+                content: '\f104';
+                color:$color-gr;
+                font-family: 'Font Awesome 5 Free';
+                font-weight: 900;
+            }
+            a{
+                @include text(1rem 'Arail',2.7rem,normal,none);
+                color: $color-gr;
+            }
+        }
+    }
+    &.gr{
+        background-color: #f7f4f3;
+    }
+}

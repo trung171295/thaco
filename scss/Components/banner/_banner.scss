@@ -1,0 +1,14 @@
+.banner-abouts{
+    width:100%;
+    img{
+        @include size(100%,100%);
+        @include img-ob(100%,cover);
+    }
+}
+.banner{
+    @include size(100%,);
+    img{
+        @include size(100%,100%);
+        @include img-ob(null,cover);
+    }
+}

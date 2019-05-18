@@ -1,0 +1,62 @@
+.name-showroom{
+    display: block;
+    width: 100%;
+    padding: 9rem 0;
+    .name-container{
+        @include flex();
+        .name{
+            width: 70%;
+            h1{
+                @include text(bold 2.285rem 'Arial',);
+                color:$color-pr;
+            }
+        }
+        .hotline{
+            @include size(30%,);
+            a{
+                @include flex(null,center);
+                padding: 1rem;
+                text-decoration: none;
+                background-color: #f20001;
+                border-radius: 3.5rem;
+                padding: 0.25rem 0.5rem;
+                @include transition(all 0.4s ease-out);
+                &:hover{
+                    @include box-shadow(0,0,1rem,#f20001,false);
+                    @include transition(all 0.4s ease-in);
+                }
+                .icon-phone{
+                    @include flex(center,center);
+                    @include size(45px,45px);
+                    background-color: $color-w;
+                    border-radius: 50%;
+                    img{
+                        @include img-fit(null,100%,cover);
+                        @include animation(
+                            calltrap_spin,
+                            2s,
+                            linear,
+                            0,
+                            infinite
+                        );
+                    }
+                }
+                .content{
+                    display: block;
+                    text-align: center;
+                    margin: auto;
+                    padding: 0 2rem;
+                    span{
+                        @include text(1rem 'Arial',1.7rem,uppercase);
+                        color: $color-w;
+                        display: block;
+                    }
+                    p{
+                        @include text(bold 1.785rem 'Arial',);
+                        color: $color-w;
+                    }
+                }
+            }
+        }
+    }
+}

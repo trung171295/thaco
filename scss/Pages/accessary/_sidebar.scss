@@ -1,0 +1,77 @@
+.sidebar{
+    width: 20%;
+    display: block;
+    .sidebar-brands{
+        .brands-name{
+            h1{
+                @include text(1.4285rem 'Arial',null,uppercase);
+                color: $color-sec;
+            }
+        }
+        #sidebar{
+            .sidebar-content{
+                padding: 1rem 0;
+                .sidebar-menu{
+                    .nav-sidebar-menu{
+                        list-style-type: none;
+                        width: 100%;
+                        display: flex;
+                        padding-left: 0;
+                        margin-bottom: 0;
+                        justify-content: flex-end;
+                        flex-wrap: wrap;
+                        li.sidebar-dropdown{
+                            width: 100%;
+                            a.nav-link{
+                                padding: 0.8rem 0;
+                                width: 100%;
+                                @include flex(flex-end,);
+                                @include text(1.4rem 'Arial',3.4rem,uppercase);
+                                @include transition(all 0.4s ease-out);
+                                color: #c1c1c1;
+                                img{
+                                    @include img-fit(null,100%,cover);
+                                    -webkit-filter: grayscale(100%) brightness(400%) contrast(1);
+                                    filter: grayscale(100%) brightness(400%) contrast(1);
+
+                                }
+                                &.active{
+                                    color: $color-sec;
+                                    img{
+                                        filter: none;
+                                    }
+                                }
+                                &:hover{
+                                    @include transition(all 0.4s ease-in);
+                                    color: $color-sec;
+                                    img{
+                                        filter: none;
+                                    }
+                                }
+                            }
+                            .sidebar-submenu{
+                                width: 100%;
+                                display: none;
+                                .nav-submenu{
+                                    padding: 1rem 0;
+                                    list-style-type: none;
+                                    text-align: right;
+                                    li.sidebar-item{
+                                        a.nav-sublink{
+                                            padding:0;
+                                            padding-bottom: 1rem;
+                                            width: 100%;
+                                            text-decoration: none;
+                                            @include text(1rem 'Arial',1.9rem,uppercase);
+                                            color: #c1c1c1;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

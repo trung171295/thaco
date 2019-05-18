@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Demo</title>
+    <link rel="Shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animated.css">
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- header -->
+        <header class="main-header">
+            <div class="container">
+
+                <!-- header-top -->
+                <div class="header-top">
+
+                    <!-- language -->
+                    <div class="language">
+                        <ul class="nav nav-lang">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">en</a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link active">vi</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- search-button -->
+                    <div class="search-button">
+                        <a href="#">
+                            <span><i class="fas fa-search"></i></span>
+                        </a>
+                        <div class="search-content">
+                            <input type="text" class="form-control" name="" id="search"
+                                placeholder="Tìm thông tin tại đây">
+                            <button class="btn-icon-search" type="submit"><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- main-menu -->
+                <div class="main-menu">
+
+                    <!-- logo -->
+                    <div class="logo">
+                        <a href="#">
+                            <img src="images/logo/logo.png" alt="">
+                        </a>
+                    </div>
+
+                    <!-- logo-department -->
+                    <div class="logo-department">
+                        <a href="#">
+                            <img src="images/logo/logo_showroom.png" alt="">
+                        </a>
+                    </div>
+
+                    <!-- menu primary -->
+                    <div class="nav-menu">
+                        <ul class="nav nav-main-menu">
+
+                            <!-- xe tải -->
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">xe tải</a>
+                                <!-- if has child menu -->
+                                <div class="has-child-menu car">
+                                    <div class="container">
+                                        <div class="list-type">
+                                            <div class="item-type">
+                                                <img src="images/icon/car1.png" alt="">
+                                            </div>
+                                            <ul class="nav nav-child-menu-car">
+                                                <div class="item-child-menu">
+                                                    <a href="#">
+                                                        <img src="images/brands/fuso.png" alt="">
+                                                        <span></span>
+                                                    </a>
+                                                </div>
+                                                <div class="item-child-menu">
+                                                    <a href="#">
+                                                        <img src="images/brands/foton.png" alt="">
+                                                        <span></span>
+                                                    </a>
+                                                </div>
+                                                <div class="item-child-menu">
+                                                    <a href="#">
+                                                        <img src="images/brands/kia.png" alt="">
+                                                        <span></span>
+                                                    </a>
+                                                </div>
+                                                <div class="item-child-menu">
+                                                    <a href="#">
+                                                        <img src="images/brands/thaco_towner.png" alt="">
+                                                        <span></span>
+                                                    </a>
+                                                </div>
+                                                <div class="item-child-menu">
+                                                    <a href="#">
+                                                        <img src="images/brands/xcd.png" alt="">
+                                                        <span></span>
+                                                    </a>
+                                                </div>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <!-- xe bus -->
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">xe bus</a>
+                                <!-- if has child menu -->
+                                <div class="has-child-menu car-bus">
+                                    <div class="container">
+                                        <div class="list-type">
+                                            <!-- menu tab xe bus -->
+                                            <div class="menu-type">
+                                                <ul class="nav nav-tabs" id="busMenu" role="tablist">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link active" id="bus-seat" data-toggle="tab"
+                                                            href="#seat" role="tab" aria-controls="seat"
+                                                            aria-selected="true">xe ghế ngồi</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" id="bus-located" data-toggle="tab"
+                                                            href="#located" role="tab" aria-controls="located"
+                                                            aria-selected="false">xe giường nằm</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" id="bus-city" data-toggle="tab"
+                                                            href="#bcity" role="tab" aria-controls="bcity"
+                                                            aria-selected="false">city bus</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- tab content -->
+                                            <div class="tabcontainer">
+                                                <div class="tab-content" id="busMenuContent">
+
+                                                    <!-- tab xe ghế ngồi -->
+                                                    <div class="tab-pane fade show active" id="seat" role="tabpanel"
+                                                        aria-labelledby="bus-seat">
+                                                        <ul class="nav nav-child-menu-bus">
+                                                            <div class="item-child-menu">
+                                                                <a href="#">
+                                                                    <img src="images/icon/tb79s.png" alt="">
+                                                                    <span>thaco tb79s</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="item-child-menu">
+                                                                <a href="#">
+                                                                    <img src="images/icon/85s.png" alt="">
+                                                                    <span>meadow 85s</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="item-child-menu">
+                                                                <a href="#">
+                                                                    <img src="images/icon/120s.png" alt="">
+                                                                    <span>bluesky 120s</span>
+                                                                </a>
+                                                            </div>
+                                                        </ul>
+                                                    </div>
+
+                                                    <!-- tab xe giường nằm -->
+                                                    <div class="tab-pane fade" id="located" role="tabpanel"
+                                                        aria-labelledby="bus-located">
+                                                        <ul class="nav nav-child-menu-bus">
+                                                            <div class="item-child-menu">
+                                                                <a href="#">
+                                                                    <img src="images/icon/tb79s.png" alt="">
+                                                                    <span>thaco tb79s</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="item-child-menu">
+                                                                <a href="#">
+                                                                    <img src="images/icon/85s.png" alt="">
+                                                                    <span>meadow 85s</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="item-child-menu">
+                                                                <a href="#">
+                                                                    <img src="images/icon/120s.png" alt="">
+                                                                    <span>bluesky 120s</span>
+                                                                </a>
+                                                            </div>
+                                                        </ul>
+                                                    </div>
+
+                                                    <!-- tab xe city bus -->
+                                                    <div class="tab-pane fade" id="bcity" role="tabpanel"
+                                                        aria-labelledby="bus-city">
+                                                        <ul class="nav nav-child-menu-bus">
+                                                            <div class="item-child-menu">
+                                                                <a href="#">
+                                                                    <img src="images/icon/tb79s.png" alt="">
+                                                                    <span>thaco tb79s</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="item-child-menu">
+                                                                <a href="#">
+                                                                    <img src="images/icon/85s.png" alt="">
+                                                                    <span>meadow 85s</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="item-child-menu">
+                                                                <a href="#">
+                                                                    <img src="images/icon/120s.png" alt="">
+                                                                    <span>bluesky 120s</span>
+                                                                </a>
+                                                            </div>
+                                                        </ul>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <!-- dịch vụ -->
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">dịch vụ</a>
+                                <!-- if has child menu -->
+                                <div class="has-child-menu">
+                                    <div class="container">
+                                        <ul class="nav nav-child-menu">
+                                            <div class="item-child-menu">
+                                                <a href="#">
+                                                    <img src="images/icon/bh.png" alt="">
+                                                    <span>bảo hành bảo dưỡng</span>
+                                                </a>
+                                            </div>
+                                            <div class="item-child-menu">
+                                                <a href="#">
+                                                    <img src="images/icon/sc.png" alt="">
+                                                    <span>dịch vụ sữa chữa</span>
+                                                </a>
+                                            </div>
+                                            <div class="item-child-menu">
+                                                <a href="#">
+                                                    <img src="images/icon/lk.png" alt="">
+                                                    <span>linh kiện - phụ tùng</span>
+                                                </a>
+                                            </div>
+                                            <div class="item-child-menu">
+                                                <a href="#">
+                                                    <img src="images/icon/mlpp.png" alt="">
+                                                    <span>mạng lưới phản hồi</span>
+                                                </a>
+                                            </div>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <!-- phụ tùng -->
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">phụ tùng</a>
+                            </li>
+
+                            <!-- tin tức -->
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">tin tức</a>
+                            </li>
+
+                            <!-- hỗ trợ -->
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">hỗ trợ</a>
+                                <!-- if has child menu -->
+                                <div class="has-child-menu">
+                                    <div class="container">
+                                        <ul class="nav nav-child-menu">
+                                            <div class="item-child-menu">
+                                                <a href="#">
+                                                    <img src="images/icon/tv.png" alt="">
+                                                    <span>tư vấn sử dụng</span>
+                                                </a>
+                                            </div>
+                                            <div class="item-child-menu">
+                                                <a href="#">
+                                                    <img src="images/icon/tc.png" alt="">
+                                                    <span>tư vấn tài chính</span>
+                                                </a>
+                                            </div>
+                                            <div class="item-child-menu">
+                                                <a href="#">
+                                                    <img src="images/icon/radio.png" alt="">
+                                                    <span>tư vấn trực tuyến trên radio</span>
+                                                </a>
+                                            </div>
+                                            <div class="item-child-menu">
+                                                <a href="#">
+                                                    <img src="images/icon//hd.png" alt="">
+                                                    <span>hỏi đáp</span>
+                                                </a>
+                                            </div>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <!-- icon-bar -->
+                    <div class="icon-bar">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+
+        <!-- banner -->
+    <section class="banner">
+        <img src="images/banner/home.jpg" alt="">
+    </section>
+
+    <!-- breadcrumb -->
+    <section class="br">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+                <li class="breadcrumb-item"><a href="#">Giới thiệu</a></li>
+                <li class="breadcrumb-item active disabled" aria-current="page"><a href="#">THACO TRƯỜNG HẢI</a></li>
+              </ol>
+        </div>
+      </section>
+      <!-- menu-abouts -->
+    <div class="menu-abouts">
+        <div class="container">
+            <ul class="nav nav-menu-abouts">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active">thaco - trường hải auto</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">giới thiệu showroom</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">chính sách & quy định chung</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">chính ách bảo mật thông tin</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- main-body -->
+    <section class="main-body">
+        <div class="container">
+            <div class="group-name">
+                <h1>thaco trường hải - auto</h1>
+            </div>
+            <div class="summary">
+                <p>Công ty Cổ phần otô Trường Hải tiền thân là Công ty TNHH ôtô Trường Hải được thành lập vào ngày 29/04/1997, trụ
+                    sở chính được đặt tại số 19 đường 2A,Khu Công Nghiệp Biên Hòa tỉnh Đồng Nai, người sáng lập là ông Trần Bá
+                    Dương, hiện là Chủ tịch HĐQT THACO.</p>
+            </div>
+            <div class="body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate sed ullam reiciendis ipsam perspiciatis
+                    error dolorum sit aliquid est. Harum blanditiis velit minima aliquid mollitia inventore animi facilis omnis
+                    doloremque explicabo. Natus veritatis nihil alias vitae. Alias, amet! Esse deserunt expedita dignissimos
+                    facere exercitationem corrupti quidem at nobis dolorum, eveniet, cupiditate dolorem minima vitae porro.
+                    Dicta perferendis quisquam nam fugit corrupti velit, iure error aliquam soluta laudantium praesentium
+                    obcaecati similique deleniti fuga expedita, magnam doloribus maiores atque qui eius pariatur sunt a hic
+                    magni? Esse id, iure sapiente quasi alias recusandae, asperiores repellendus ad quae magni impedit. At
+                    tenetur beatae voluptas natus itaque porro, laudantium facere illum veritatis! Adipisci esse accusantium
+                    sequi natus suscipit aliquam et beatae repellendus necessitatibus maxime ratione totam reprehenderit culpa
+                    atque reiciendis voluptates porro blanditiis, quae cumque, ad vero? Quam maiores pariatur enim magnam ad.
+                    Quisquam rerum, possimus doloremque natus, tempore sequi reprehenderit vel sint ipsam itaque corrupti! Neque
+                    ipsam fuga in, eum maiores error sint, voluptates culpa deleniti obcaecati iure animi sequi repellat facilis
+                    fugit hic saepe numquam non. Aperiam, non possimus. Omnis quaerat eius quae possimus. Facilis, ipsa et!
+                    Eligendi vel nesciunt, explicabo nam sint doloribus consectetur odio repellat ullam placeat porro! Ipsam,
+                    architecto.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptatem, sequi unde reprehenderit
+                    assumenda fuga fugiat exercitationem nemo quasi temporibus recusandae minima quod doloremque aperiam, quos
+                    laudantium? Tempora provident quasi dolorum deserunt laborum. Ab quisquam error minima modi sunt deserunt,
+                    corrupti voluptatum placeat consequatur iure consectetur dignissimos! Cumque enim ex, dolore explicabo ea,
+                    vitae molestias quas natus et repudiandae culpa vero corrupti dolorum quo id a totam, architecto hic beatae.
+                    Nesciunt ullam tempore architecto tempora eum expedita culpa ipsa cumque est perspiciatis beatae iste
+                    possimus exercitationem, odio debitis voluptatem iusto ipsum odit quae! Vitae corrupti exercitationem culpa.
+                    Labore praesentium nam, harum quos porro tempora sequi. Nisi repudiandae recusandae praesentium doloremque
+                    vero rem id quod ipsum eum dolor itaque perferendis sapiente voluptatibus pariatur obcaecati voluptatem
+                    laudantium et ipsa error, libero ullam tempora a. Enim, modi voluptates? Quam soluta perspiciatis ea
+                    molestias ab perferendis dolorem ducimus explicabo numquam, atque incidunt nihil cumque inventore, fuga eum!
+                    Porro, ex velit. Debitis accusantium laboriosam expedita, odit omnis maiores ducimus adipisci fugiat commodi
+                    fugit. Accusamus dicta mollitia tenetur iure molestiae incidunt ratione? Necessitatibus animi dolorem
+                    provident quo asperiores eveniet saepe? Quae illo voluptatibus fugit consectetur consequatur sed ullam
+                    debitis, quia ex amet molestias provident incidunt? Provident, minus commodi. Assumenda, aut quo est in
+                    dolorem architecto, ipsum modi quos nisi, magni rem quidem quam beatae! Blanditiis a provident libero
+                    suscipit odit magnam labore adipisci laborum ab vero, voluptate, ut aperiam cupiditate. Sapiente cumque
+                    error quam repudiandae quas inventore, blanditiis similique labore cum recusandae aperiam, fuga modi!
+                    Dolorem, quam temporibus? Sit inventore error, fuga laborum maxime minus numquam ad, quam amet aut nisi
+                    quaerat. Reiciendis odit, dolorum ullam voluptatum nisi maiores similique laudantium architecto quisquam,
+                    doloremque nam! Impedit expedita eveniet quos, molestiae perspiciatis nisi eaque saepe dolorum consequatur
+                    exercitationem nihil reiciendis facere sequi magnam at repellat, enim architecto! Reiciendis odit odio porro
+                    minima? Error eos vel, earum ipsum numquam ea doloribus dolorem, laudantium rerum unde fugiat provident id
+                    asperiores quod! Sed beatae explicabo quos rem facilis placeat ad est dolor, eius, reiciendis doloribus esse
+                    doloremque iure? Ullam sit, labore autem placeat vero molestias repellat amet in optio voluptas.</p>
+                <div>
+                    <img src="images/blogs/2THACOTAI-SHOWROOM_GIOI-THIEU_06.jpg" alt="">
+                    <img src="images/blogs/2THACOTAI-SHOWROOM_GIOI-THIEU_06.jpg" alt="">
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nobis dolor neque accusamus consequatur
+                    temporibus ut aspernatur consequuntur quidem ipsum dolores iusto aliquid ducimus doloremque, voluptatum sed
+                    et velit obcaecati dolorem. Nobis atque eveniet earum? Assumenda eveniet quis officiis? Labore recusandae
+                    cupiditate ratione? Voluptatem sequi, ratione id perspiciatis cupiditate dolorum placeat modi labore,
+                    voluptatibus doloremque dolorem numquam atque fugiat. Beatae numquam dignissimos id architecto aliquam
+                    doloremque dolorem commodi? Alias impedit explicabo asperiores nostrum, quibusdam laboriosam vero officia
+                    voluptatem quidem assumenda est modi inventore. Hic quo amet iste similique fuga fugit nesciunt unde quae
+                    ipsam corrupti iusto iure molestias voluptates nihil voluptatem reprehenderit corporis rem, quam inventore.
+                    Odit nobis, placeat tempora ex dolores praesentium, deleniti quis quaerat aliquam voluptas eius numquam?
+                    Ipsum eos, aliquam itaque ab dicta veniam ut saepe excepturi quas atque aperiam? Tempore quos debitis optio,
+                    minima totam voluptas commodi nam doloremque odio voluptatibus sit magni natus nesciunt. Cumque illum
+                    recusandae repellat, vero magni quo harum aperiam nemo natus laboriosam voluptates consequuntur quam eaque
+                    eum alias iure facere excepturi laborum tempora? Odit incidunt sequi magnam quis illum aliquid nam laborum
+                    corrupti voluptatem aspernatur repellendus pariatur, quisquam, illo corporis eligendi? Nam corporis commodi
+                    officiis molestias excepturi, maiores autem consectetur distinctio repudiandae at aliquam doloribus ipsa
+                    nulla dignissimos sapiente obcaecati, officia ut sunt eaque sed est ad odit quasi eos! Adipisci enim minus
+                    illum. Impedit illo ad error iusto sed. Ipsam?</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- list-showroom -->
+    <section class="list-showroom">
+        <div class="container">
+            <div class="parent-showroom">
+                <div class="showroom-name">
+                    <h3>Văn phòng điều hành kinh doanh toàn quốc</h3>
+                </div>
+                <div class="showroom-address">
+                    <p>Tầng 16, Tòa nhà IIA Khu đô thị Sala, số 10 Mai Chí Thọ,P.An Lợi Đông,Quận 2, TP.HCM <br>Điện thoại:<a href="#">0933
+                        805 807</a></p>
+                </div>
+            </div>
+            <div class="showroom-child">
+                <div class="showroom-item">
+                    <div class="showroom-name">
+                        <h3>Chi nhánh 1</h3>
+                    </div>
+                    <div class="showroom-address">
+                        <p>Tầng 16, Tòa nhà IIA Khu đô thị Sala, số 10 Mai Chí Thọ,P.An Lợi Đông,Quận 2, TP.HCM <br>Điện thoại:
+                            <a href="#">0933 805 807</a></p>
+                    </div>
+                </div>
+                <div class="showroom-item">
+                    <div class="showroom-name">
+                        <h3>Chi nhánh 2</h3>
+                    </div>
+                    <div class="showroom-address">
+                        <p>Số 19 đường 2A, Khu công nghiệp Biên Hòa 2, Tỉnh Đồng Nai <br>Điện thoại: <a href="#">0613891726</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="showroom-item">
+                    <div class="showroom-name">
+                        <h3>Chi nhánh 3</h3>
+                    </div>
+                    <div class="showroom-address">
+                        <p>Lô 6,KCN Hà Nội Đài Tư, 386 Nguyễn Văn Linh, Sài Đồng, Long Biên, Hà Nội<br>Điện thoại: <a
+                                href="#">0933 805 807</a> - Fax: <a href="#" 043 875 8957></a></p>
+                    </div>
+                </div>
+                <div class="showroom-item">
+                    <div class="showroom-name">
+                        <h3>Khu phức hợp Chu LAi- Trường Hải</h3>
+                    </div>
+                    <div class="showroom-address">
+                        <p>405, Tôn Đức Thắng, P.Hòa Minh,Q.Linh Chiểu, TP.Đà Nẵng <br>Điện thoại: <a href="#">05113.76495</a> -
+                            Fax: <a href="#">05113. 764494</a></p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+        <!-- footer -->
+        <footer class="main-footer">
+            <div class="container">
+                            <!-- main-footer -->
+            <section class="footer">
+                    <!-- menu-footer -->
+                    <div class="menu-footer">
+                        <!-- nav menu -->
+                        <ul class="nav nav-menu-footer">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">giới thiệu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">download</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">liên hệ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">tuyển dụng</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">hình ảnh</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">video</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">tới trang</a>
+                            </li>
+                        </ul>
+                        <!-- copyright -->
+                        <div class="copyright">
+                            <p>@2019 Thaco - Trường Hải Auto</p>
+                        </div>
+                    </div>
+                    <!-- menu social -->
+                    <div class="menu-social">
+                        <ul class="nav nav-menu-social">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"><i class="fab fa-youtube"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"><i class="fab fa-google-plus-g"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"><i class="fab fa-twitter"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <!-- sticky social -->
+                <div class="stick-right">
+                    <div class="item">
+                        <div class="left-show"><img src="images/icon/phone.png" class="d-block m-auto img-fluid" alt=""></div>
+                        <div class="right-hide">KINH DOANH: <a href="tel:0933800567">0933 800 567</a></div>
+                    </div>
+                    <div class="item">
+                        <div class="left-show"><img src="images/icon/phone.png" class="d-block m-auto img-fluid" alt=""></div>
+                        <div class="right-hide">KINH DOANH: <a href="tel:0933800567">0933 800 567</a></div>
+                    </div>
+                    <div class="item">
+                        <div class="left-show"><img src="images/icon/loca.png" class="d-block m-auto img-fluid" alt=""></div>
+                        <div class="right-hide"><a href="showroom.html">ĐẠI LÝ THACO GẦN NHẤT</a></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- button-scroll-top -->
+        <div class="scroll-top">
+            <span><i class="fas fa-chevron-up"></i></span>
+        </div>
+
+        <!-- preloader -->
+        <div class="holder">
+            <div class="preloader">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- import file js -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/main.js"></script>
+    <!-- end import file js -->
+
+</body>
+
+</html>

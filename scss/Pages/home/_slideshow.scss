@@ -1,0 +1,22 @@
+.slideshow {
+	display: block;
+	@include size(100%, 580px);
+	.sw-slideshow {
+		@include size(100%, 100%);
+        .swiper-slide{
+            @include size(100%, 100%);
+            img {
+                @include img-fit(100%!important,100%, cover);
+                height: 100%!important;
+            }
+        }
+    }
+    .pagi-slideshow{
+        .swiper-pagination-bullet{
+            background-color: #c8cacb;
+        }
+        .swiper-pagination-bullet-active{
+            background-color: #ffffff;
+        }
+    }
+}

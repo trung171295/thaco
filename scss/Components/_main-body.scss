@@ -1,0 +1,36 @@
+.main-body{
+    padding: 4.4rem 0;
+    .group-name{
+        text-align: center;
+        margin-bottom: 5rem;
+        h1{
+            @include text(null,3.4rem,uppercase,);
+            color: $color-pr;
+        }
+    }
+    .summary{
+        margin-bottom: 4rem;
+        p{
+            @include text(500 1.5rem 'Arial',2.5rem,normal,);
+            color: #000;
+        }
+    }
+    .body{
+        padding-bottom: 4.4rem;
+        border-bottom: 1px solid $color-border;
+        p{
+            line-height: 2rem;
+            img{
+                @include img-fit(null,100%,cover);
+                margin: 0.5rem;
+            }
+        }
+        div{
+            padding: 2.5rem 0;
+            display: flex!important;
+            img{
+                margin: 0.5rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,74 @@
+#accordionReReRe{
+    margin-top: calc(-6.7rem + 1px);
+    .card{
+        border: 1px solid #f0f0f0;
+        box-shadow: 0 0 5px #f0f0f0;
+        border-radius: 0;
+        .card-header{
+            padding: 2.35rem 3.375rem;
+            border-radius: 0;
+            background-color: $color-w;
+            border: none;
+            cursor: pointer;
+            .card-title{
+                margin: 0;
+                h1{
+                    @include text(1.5rem 'Arial',null,uppercase);
+                    color: #666666;
+                }
+            }
+        }
+        .card-body{
+            padding: 3.5rem;
+            background-color: $color-pr;
+            .recruitment-container{
+                @include flex();
+                .content{
+                    width: 50%;
+                    display: block;
+                    .content-item{
+                        .title{
+                            h3{
+                                @include text(1rem 'Arial',1.85rem,uppercase,);
+                                color: $color-w;
+                            }
+                        }
+                        .mission{
+                            padding: 1rem 4rem 2.5rem 4.85rem;
+                            p{
+                                margin-bottom: 1rem;
+                                color: $color-w;
+                            }
+                        }
+                    }
+                }
+                .button-cv{
+                    width: 50%;
+                    position: relative;
+                    .formCV{
+                        position: absolute;
+                        bottom: 2.5rem;
+                        right: 3.5rem;
+                        .form-group{
+                            .btn-smCV{
+                                padding: 1.4rem 5rem;
+                                @include text(1rem 'Arial',1.85rem,uppercase);
+                                color: #666666;
+                                background-color: $color-w;
+                                border-radius: 0;
+                                border: none;
+                                cursor: pointer;
+                                &:focus{
+                                    outline: none;
+                                }
+                            }
+                            #file{
+                               display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

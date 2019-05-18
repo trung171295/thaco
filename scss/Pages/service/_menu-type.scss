@@ -1,0 +1,52 @@
+.menu-showroom-type{
+    #tabShowroom{
+        @include flex(center,center);
+        border-bottom: none;
+        margin: 1rem 0;
+        li.nav-item{
+            margin-right: 2rem;
+            padding: 0;
+            a.nav-link{
+                @include flex(null,center);
+                padding: 1rem 1.75rem;
+                background-color: $color-w;
+                border: 1px solid $color-border;
+                border-radius: 5px;
+                @include transition(0.4s ease-out);
+                span{
+                    @include text(1.285rem 'Arial',3.4rem,uppercase,none);
+                    color: $color-sec;
+                    padding: 0 1.64rem;
+                    padding-right: 2rem;
+                }
+                img{
+                    @include img-fit(null,100%,cover);
+                    @include size(72px,36px);
+                    -webkit-filter: grayscale(100%) brightness(800%) contrast(0.4);
+                    filter: grayscale(100%) brightness(800%) contrast(0.4); 
+                }
+                &.active{
+                    background-color: $color-pr;
+                    span{
+                        color: $color-w
+                    }
+                    img{
+                        filter: none;
+                        -webkit-filter:none;
+                    }
+                }
+                &:hover{
+                    background-color: $color-pr;
+                    span{
+                        color: $color-w
+                    }
+                    img{
+                        filter: none;
+                        -webkit-filter:none;
+                    }
+                    @include transition(0.4s ease-in);
+                }
+            }
+        }
+    }
+}

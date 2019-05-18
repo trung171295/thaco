@@ -1,0 +1,84 @@
+.blogs-related{
+    display: block;
+    width: 100%;
+    background-color: #f9fafa;
+    padding: 5.5rem;
+
+    ////group-name
+    .group-name{
+        text-align: center;
+        h1{
+            @include text(2.1rem 'Arial',2.5rem,uppercase);
+            color: $color-pr;
+        }
+    }
+
+    /////list-blogs-related
+    .list-blogs-related{
+        padding: 4.2rem 0;
+        @include flex();
+        .blogs-item{
+            display: block;
+            margin-right: 2rem;
+            width: calc(100% / 3);
+            position: relative;
+            padding-bottom: 2rem;
+            &:last-child{
+                margin-right: 0;
+            }
+            .blogs-item-img{
+                width: 100%;
+                margin-bottom: 1rem;
+                img{
+                    @include img-fit(100%,cover);
+                    height: 180px;
+                }
+            }
+            .blogs-item-content{
+                .push-date{
+                    margin-bottom: 1.5rem;
+                    h6{
+                        @include text(0.85rem 'Arial',);
+                        color: $color-sec;
+                    }
+                }
+                .headline{
+                    margin-bottom: 1.5rem;
+                    h3{
+                        @include text(1.4rem 'Arial',);
+                        a{
+                            text-decoration: none;
+                            color: $color-sec;
+                            @include transition(all 0.3s ease-out);
+                        }
+                    }
+
+                    &:hover{
+                        h3{
+                            a{
+                                color: $color-pr;
+                                @include transition(all 0.3s ease-in);
+                            }
+                        }
+                    }
+
+                }
+                .summary{
+                    margin-bottom: 1.5rem;
+                    p{
+                        @include text(1rem 'Arial',);
+                        color: $color-gr;
+                    }
+                }
+                .link-see{
+                    position: absolute;
+                    bottom: 0;
+                    a{
+                        @include text(0.875rem 'Arail',);
+                        color: $color-pr!important;
+                    }
+                }
+            }
+        }
+    }
+}

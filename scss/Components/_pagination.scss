@@ -1,0 +1,18 @@
+.pagi{
+    margin: 3rem 0;
+    .pagination{
+        li.page-item{
+            margin-right: 1rem;
+            a.page-link{
+                border-radius: 0.25rem;
+                border-color: #e8e8e8;
+                &.active{
+                    background-color: $color-pr;
+                }
+            }
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+}
