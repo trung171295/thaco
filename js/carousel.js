@@ -39,20 +39,32 @@ $(document).ready(function() {
 				slidesPerGroup: 5,
 			},
 			768: {
-				slidesPerView: 2,
-				slidesPerColumn: 3,
+				slidesPerView: 3,
+				slidesPerColumn: 2,
 				slidesPerGroup: 6,
 			},
 			640: {
 				slidesPerView: 2,
 				slidesPerColumn: 3,
-				slidesPerGroup: 5,
+				slidesPerGroup: 6,
+				autoplay: false
+			},
+			480:{
+				slidesPerView: 2,
+				slidesPerColumn:3,
+				slidesPerGroup: 6,
+				autoplay: false
+			},
+			375:{
+				slidesPerView: 2,
+				slidesPerColumn:3,
+				slidesPerGroup: 6,
 				autoplay: false
 			},
 			320: {
 				slidesPerView: 2,
 				slidesPerColumn:3,
-				slidesPerGroup: 5,
+				slidesPerGroup: 6,
 				autoplay: false
 			}
 		  }
@@ -74,27 +86,33 @@ $(document).ready(function() {
 				slidesPerGroup: 5,
 			},
 			768: {
-				slidesPerView: 2,
-				slidesPerColumn: 3,
+				slidesPerView: 3,
+				slidesPerColumn: 2,
 				slidesPerGroup: 6,
-				observer: true,
-				observeParents: true,
 			},
 			640: {
 				slidesPerView: 2,
 				slidesPerColumn: 3,
-				slidesPerGroup: 5,
-				autoplay: false,
-				observer: true,
-				observeParents: true,
+				slidesPerGroup: 6,
+				autoplay: false
+			},
+			414:{
+				slidesPerView: 2,
+				slidesPerColumn:3,
+				slidesPerGroup: 6,
+				autoplay: false
+			},
+			375:{
+				slidesPerView: 2,
+				slidesPerColumn:3,
+				slidesPerGroup: 6,
+				autoplay: false
 			},
 			320: {
 				slidesPerView: 2,
 				slidesPerColumn:3,
-				slidesPerGroup: 5,
-				autoplay: false,
-				observer: true,
-				observeParents: true,
+				slidesPerGroup: 6,
+				autoplay: false
 			}
 		  },
 		observer: true,
@@ -265,15 +283,15 @@ $(document).ready(function() {
 			},
 			768: {
 				spaceBetween: 30,
-				slidesPerView: 3,
+				slidesPerView: 1,
 			},
 			640: {
-				spaceBetween: 1,
-				slidesPerView: 3,
+				spaceBetween: 30,
+				slidesPerView: 1,
 			},
 			320: {
-				spaceBetween: 1,
-				slidesPerView: 3,
+				spaceBetween: 30,
+				slidesPerView: 1,
 			}
 		  }
 	});
@@ -296,7 +314,7 @@ $(document).ready(function() {
 			},
 			768: {
 				spaceBetween: 30,
-				slidesPerView: 3,
+				slidesPerView: 1,
 			},
 			640: {
 				spaceBetween: 30,
@@ -335,7 +353,7 @@ $(document).ready(function() {
 			},
 			768: {
 				spaceBetween: 30,
-				slidesPerView: 3,
+				slidesPerView: 1,
 			},
 			640: {
 				spaceBetween: 30,
@@ -374,7 +392,7 @@ $(document).ready(function() {
 			},
 			768: {
 				spaceBetween: 30,
-				slidesPerView: 3,
+				slidesPerView: 1,
 			},
 			640: {
 				spaceBetween: 30,

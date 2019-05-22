@@ -41,3 +41,113 @@
         }
     }
 }
+@include mobile{
+    .blogs{
+        padding: 2.5rem 0;
+        .blogs-content{
+            .group-name{
+                h1{
+                    font-size: 1.5rem;
+                    text-align: center;
+                }
+            }
+            .blogs-menu{
+                #tab-blogsseat{
+                    justify-content: center;
+                    li.nav-item{
+                        a.nav-link{
+                            font-size: 1rem;
+                        }
+                    }   
+                }
+                #tab-blogscontent{
+                    .sw-blogs,.sw-blogs-bus,.sw-blogs-private{
+                        .swiper-slide{
+                            .blogs-item{
+                                .blogs-item-img{
+                                    height: 170px!important;
+                                }
+                                .blogs-item-headline{
+                                    padding: 1rem!important;
+                                }
+                            }
+                        }
+                        .swiper-button-next,.swiper-button-prev{
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .button-radio{
+                position: relative;
+            }
+        }
+    }
+}
+@include tablet{
+    .blogs{
+        padding: 2.5rem 0;
+        .blogs-content{
+            .group-name{
+                h1{
+                    font-size: 2rem;
+                    text-align: center;
+                }
+            }
+            .blogs-menu{
+                #tab-blogsseat{
+                    justify-content: center;
+                    li.nav-item{
+                        a.nav-link{
+                            font-size: 1.5rem;
+                        }
+                    }   
+                }
+                #tab-blogscontent{
+                    .sw-blogs,.sw-blogs-bus,.sw-blogs-private{
+                        .swiper-slide{
+                            .blogs-item{
+                                .blogs-item-img{
+                                    height: 270px!important;
+                                }
+                                .blogs-item-headline{
+                                    padding: 1.5rem!important;
+                                    h3{
+                                        font-size: 1.5rem!important;
+                                    }
+                                }
+                            }
+                        }
+                        .swiper-button-next,.swiper-button-prev{
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .button-radio{
+                position: relative;
+                padding: 2rem;
+                .btn-radio{
+                    width: 100%;
+                    .img-radio{
+                        width: 10%;
+                    }
+                    .radio-title{
+                        width: 80%;
+                        .headline{
+                            margin-bottom: 1rem;
+                            h3{
+                                font-size: 1.5rem;
+                            }
+                        }
+                        .summary{
+                            p{
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

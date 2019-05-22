@@ -55,3 +55,125 @@
         }
     }
 }
+@include mobile{
+    .menu-abouts{
+        margin-top: 2rem;
+        border-bottom: 1px solid $color-border;
+        .nav-menu-abouts{
+            li.nav-item{
+                width: 100%;
+                border-right: 0;
+            a.nav-link{
+                padding: 1rem;
+                text-align: center;         
+            }
+            }
+        }
+    }
+    .main-body{
+        padding: 2.5rem 0;
+        .group-name{
+            margin-bottom: 3rem;
+        }
+        .summary{
+            margin-bottom: 3rem;
+        }
+        .body{
+            div{
+                display: block;
+                img{
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+    .list-showroom{
+        min-height: 0;   
+        .parent-showroom{
+            width: 100%;
+            margin-bottom: 1.5rem;
+            .showroom-address{
+                padding-bottom: 1rem;
+                p{
+                    line-height: 1.5rem;
+                }
+            }
+        }
+        .showroom-child{
+            .showroom-item{
+                width: 100%;
+                margin-bottom: 1.5rem;
+                padding-right: 0;
+                .showroom-address{
+                    padding: 1rem;
+                    p{
+                        line-height: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+@include tablet{
+    .menu-abouts{
+        margin-top: 2rem;
+        border-bottom: 1px solid $color-border;
+        .nav-menu-abouts{
+            li.nav-item{
+                width: 100%;
+                border-right: 0;
+            a.nav-link{
+                padding: 1rem;
+                text-align: center; 
+                font-size: 1.5rem;        
+            }
+            }
+        }
+    }
+    .main-body{
+        padding: 3.5rem 0;
+        .group-name{
+            margin-bottom: 3rem;
+            h1{
+                font-size: 2.5rem;
+            }
+        }
+        .summary{
+            margin-bottom: 3rem;
+        }
+        .body{
+            div{
+                display: block;
+                img{
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+    .list-showroom{
+        min-height: 0;   
+        .parent-showroom{
+            width: 100%;
+            margin-bottom: 1.5rem;
+            .showroom-address{
+                padding-bottom: 1.5rem;
+                p{
+                    line-height: 1.5rem;
+                }
+            }
+        }
+        .showroom-child{
+            .showroom-item{
+                width: 100%;
+                margin-bottom: 1.5rem;
+                padding-right: 0;
+                .showroom-address{
+                    padding-bottom: 1rem;
+                    p{
+                        line-height: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}

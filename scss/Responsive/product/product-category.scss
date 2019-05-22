@@ -84,3 +84,175 @@
         }
     }
 }
+@include mobile{
+	.product-category {
+		padding: 2.5rem 0;
+		.product-container {
+			display: block;
+			.sidebar-category {
+				width: 100%;
+				#myTabProduct {
+					@include flex(center, center);
+					li.nav-item {
+						width: calc(100% / 3);
+						border-right: 1px solid $color-border;
+						border-bottom: none;
+						a.nav-link {
+							line-height: 1.5rem;
+							padding: 0.5rem 0.75rem;
+							font-size: 0.6rem;
+							border-radius: 0;
+							text-align: center;
+						}
+						&:first-child {
+							a.nav-link {
+								padding-left: 0;
+							}
+						}
+						&:last-child {
+							border-right: none;
+							a.nav-link {
+								padding-right: 0;
+							}
+						}
+					}
+				}
+			}
+			#myProductContent {
+				width: 100%;
+				padding: 1.5rem 0;
+				.product-container {
+					grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+                    grid-column-gap: 1rem;
+                    grid-row-gap: 1.5rem;
+                    p{
+                        font-size: 0.7rem;
+                    }
+					.product-item {
+						.product-images {
+							margin-bottom: 1rem;
+							height: 65px;
+							img {
+								height: 100%;
+							}
+						}
+						.product-name {
+							h3 {
+								font-size: 1rem;
+							}
+						}
+						.weight {
+							p {
+								font-size: 0.7rem;
+							}
+						}
+					}
+				}
+			}
+		}
+    }
+    .product-description{
+        padding: 1.5rem 0;
+        .prd-container{
+            display: block;
+            .product-type{
+                padding: 1rem 0;
+                width: 100%;
+            }
+            .product-describe{
+                width: 100%;
+                padding: 0;
+                p{
+                    font-size: 0.8rem;
+                    line-height: 1.3rem;
+                }
+            }
+        }
+    }
+}
+@include tablet{
+	.product-category {
+		padding: 2.5rem 0;
+		.product-container {
+			display: block;
+			.sidebar-category {
+				width: 100%;
+				#myTabProduct {
+					@include flex(center, center);
+					li.nav-item {
+						width: calc(100% / 3);
+						border-right: 1px solid $color-border;
+						border-bottom: none;
+						a.nav-link {
+							line-height: 1.5rem;
+							padding: 0.5rem 0.75rem;
+							font-size: 0.6rem;
+							border-radius: 0;
+							text-align: center;
+						}
+						&:first-child {
+							a.nav-link {
+								padding-left: 0;
+							}
+						}
+						&:last-child {
+							border-right: none;
+							a.nav-link {
+								padding-right: 0;
+							}
+						}
+					}
+				}
+			}
+			#myProductContent {
+				width: 100%;
+				padding: 1.5rem 0;
+				.product-container {
+					grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+                    grid-column-gap: 1rem;
+                    grid-row-gap: 1.5rem;
+                    p{
+                        font-size: 0.7rem;
+                    }
+					.product-item {
+						.product-images {
+							margin-bottom: 1rem;
+							height: 65px;
+							img {
+								height: 100%;
+							}
+						}
+						.product-name {
+							h3 {
+								font-size: 1rem;
+							}
+						}
+						.weight {
+							p {
+								font-size: 0.7rem;
+							}
+						}
+					}
+				}
+			}
+		}
+    }
+    .product-description{
+        padding: 1.5rem 0;
+        .prd-container{
+            display: block;
+            .product-type{
+                padding: 1rem 0;
+                width: 100%;
+            }
+            .product-describe{
+                width: 100%;
+                padding: 0;
+                p{
+                    font-size: 0.8rem;
+                    line-height: 1.3rem;
+                }
+            }
+        }
+    }
+}

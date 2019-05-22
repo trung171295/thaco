@@ -17,3 +17,52 @@
         }
     }
 }
+@include mobile{
+    .blogs-promotion{
+        padding: 2.5rem 0;
+        .group-name{
+            margin-bottom: 1.5rem;
+            h1{
+                font-size: 1.3rem;
+            }
+        }
+        .list-blogs-promotion{
+            display: block;
+            .blogs-promotion-item{
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
+@include tablet{
+    .blogs-promotion{
+        padding: 3.5rem 0;
+        .group-name{
+            margin-bottom: 1.5rem;
+            h1{
+                font-size: 1.7rem;
+            }
+        }
+        .list-blogs-promotion{
+            display: block;
+            .blogs-promotion-item{
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: 1.5rem;
+                .img{
+                    img{
+                        height: 240px;
+                    }
+                }
+                .headline{
+                    padding: 1.5rem;
+                    h3{
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}

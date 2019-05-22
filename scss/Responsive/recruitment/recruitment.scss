@@ -1,15 +1,110 @@
-.recruitment{
+@include mobile-sm{
+    .recruitment{
+        margin-bottom: 0;
+        #accordionReReRe{
+            margin-top: 0;
+            padding: 2rem 0;
+            .card{
+                .card-header{
+                    padding: 1rem;
+                    .card-title{
+                        h1{
+                            font-size: 1rem;
+                            line-height: 1.5rem;
+                        }
+                    }
+                }
+                .card-body{
+                    padding: 1rem;
+                    .recruitment-container{
+                        padding: 1rem;
+                        flex-wrap: wrap;
+                        .content{
+                            width: 100%;
+                            .content-item{
+                                .mission {
+                                    padding:1rem;
+                                }
+                            }
+                        }
+                        .button-cv{
+                            width: 100%;
+                            @include flex(center,);
+                            .formCV{
+                                position: static;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .pagi{
+            .pagination{
+                justify-content: center!important;
+            }
+        }
+    }
+}
+@include mobile{
+    .recruitment{
+        margin-bottom: 0;
+        #accordionReReRe{
+            margin-top: 0;
+            padding: 2rem 0;
+            .card{
+                .card-header{
+                    padding: 1rem;
+                    .card-title{
+                        h1{
+                            font-size: 1rem;
+                            line-height: 1.5rem;
+                        }
+                    }
+                }
+                .card-body{
+                    padding: 1rem;
+                    .recruitment-container{
+                        padding: 1rem;
+                        flex-wrap: wrap;
+                        .content{
+                            width: 100%;
+                            .content-item{
+                                .mission {
+                                    padding:1rem;
+                                }
+                            }
+                        }
+                        .button-cv{
+                            width: 100%;
+                            @include flex(center,);
+                            .formCV{
+                                position: static;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .pagi{
+            .pagination{
+                justify-content: center!important;
+            }
+        }
+    }
+}
+@include tablet{
+    .recruitment{
     margin-bottom: 0;
     #accordionReReRe{
-        margin-top: 0;
+        margin-top: -5rem;
         padding: 2rem 0;
         .card{
             .card-header{
-                padding: 1rem;
+                padding: 1.5rem;
                 .card-title{
                     h1{
-                        font-size: 1rem;
-                        line-height: 1.5rem;
+                        font-size: 1.5rem;
+                        line-height: 2rem;
                     }
                 }
             }
@@ -22,7 +117,7 @@
                         width: 100%;
                         .content-item{
                             .mission {
-                                padding:1rem;
+                                padding:1.5em;
                             }
                         }
                     }
@@ -42,4 +137,5 @@
             justify-content: center!important;
         }
     }
+}
 }

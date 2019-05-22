@@ -10,3 +10,27 @@
         }
     }
 }
+@include mobile{
+    .br{
+        .breadcrumb{
+            padding: 1rem 0;
+            li.breadcrumb-item{
+                a{
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+}
+@include tablet{
+    .br{
+        .breadcrumb{
+            padding: 1rem 0;
+            li.breadcrumb-item{
+                a{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}

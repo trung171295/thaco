@@ -71,3 +71,149 @@
         }
     }
 }
+@include mobile{
+    .name-showroom{
+        padding: 2.5rem 0;
+        .name-container{
+            flex-wrap: wrap;
+            .name{
+                width: 100%;
+                margin-bottom: 1.5rem;
+                h1{
+                    font-size: 1.7rem;
+                }
+            }
+            .hotline{
+                width: 100%;
+            }
+        }
+    }
+    .showroom-address{
+        padding-bottom: 2rem;
+        .sadd-container{
+            flex-wrap: wrap;
+            .main-showroom{
+                width: 100%;
+                .name{
+                    margin-bottom: 2rem;
+                    h1{
+                        font-size: 1.5rem;
+                    }
+                }
+                .address{
+                    p{
+                        margin-bottom: 0.5rem;
+                    }
+                }
+            }
+            .phone-support{
+                margin-top: 0;
+                padding: 2rem 0;
+                width: 100%;
+                .phone-item{
+                    width: 100%;
+                    .number{
+                        padding-left: 1rem;
+                        padding-bottom: 1rem;
+                        p{
+                            margin-bottom: 0.5rem;
+                            svg{
+                                margin-right: 0.5rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .form-feedback{
+        padding: 3rem 0;
+        .form-title{
+            margin-bottom: 2rem;
+        }
+        #fback{
+            .security-terms{
+                margin-top: 2rem;
+                .title{
+                    margin-bottom: 1.5rem;
+                }
+            }
+            .button-submit{
+                @include flex(center,null);
+            }
+        }
+    }
+}
+@include tablet{
+    .name-showroom{
+        padding: 2.5rem 0;
+        .name-container{
+            flex-wrap: wrap;
+            .name{
+                width: 100%;
+                margin-bottom: 1.5rem;
+                h1{
+                    font-size: 1.7rem;
+                }
+            }
+            .hotline{
+                width: 100%;
+            }
+        }
+    }
+    .showroom-address{
+        padding-bottom: 2rem;
+        .sadd-container{
+            flex-wrap: wrap;
+            .main-showroom{
+                width: 100%;
+                .name{
+                    margin-bottom: 2rem;
+                    h1{
+                        font-size: 1.5rem;
+                    }
+                }
+                .address{
+                    p{
+                        margin-bottom: 0.5rem;
+                    }
+                }
+            }
+            .phone-support{
+                margin-top: 0;
+                padding: 2rem 0;
+                width: 100%;
+                .phone-item{
+                    width: 100%;
+                    .number{
+                        padding-left: 1rem;
+                        padding-bottom: 1rem;
+                        p{
+                            margin-bottom: 0.5rem;
+                            svg{
+                                margin-right: 0.5rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .form-feedback{
+        padding: 3rem 0;
+        .form-title{
+            margin-bottom: 2rem;
+        }
+        #fback{
+            .security-terms{
+                margin-top: 2rem;
+                .title{
+                    margin-bottom: 1.5rem;
+                }
+            }
+            .button-submit{
+                @include flex(center,null);
+            }
+        }
+    }
+}

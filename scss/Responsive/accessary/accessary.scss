@@ -48,3 +48,108 @@
         }
     }
 }
+@include mobile{
+    .accesary-container{
+        .acc-container{
+            flex-wrap: wrap;
+            .sidebar{
+                width: 100%;
+            }
+            .list-accesary{
+                width: 100%;
+                min-height: 0;
+                padding-left: 0;
+                grid-template-columns: repeat(2,minmax(50%,1fr));
+                grid-template-rows: repeat(auto-fit, 150px);
+                grid-gap: 1rem;
+                .accessary-item{
+                    .accesary-item-img{
+                        margin-bottom: 1rem;
+                        height: 90px;
+                        img{
+                            max-height: 70px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .fancybox-content{
+        width: 80%;
+        padding: 1.5rem;
+        #animatedModal{
+            .accessary-popup-container{
+                padding: 0;
+                flex-wrap: wrap;
+                .images{
+                    width: 100%;
+                }
+                .content{
+                    width: 100%;
+                    padding: 2rem 0;
+                    .headline{
+                        margin-bottom: 2rem;
+                        h1{
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@include tablet{
+    .accesary-container{
+        .acc-container{
+            flex-wrap: wrap;
+            .sidebar{
+                width: 100%;
+            }
+            .list-accesary{
+                width: 100%;
+                min-height: 0;
+                padding-left: 0;
+                grid-template-columns: repeat(3,minmax(calc(100% / 3),1fr));
+                grid-template-rows: repeat(auto-fit, 190px);
+                grid-gap: 2rem;
+                .accessary-item{
+                    .accesary-item-img{
+                        margin-bottom: 1rem;
+                        height: 180px;
+                        img{
+                            max-height: 90px;
+                        }
+                    }
+                    .accesary-item-name{
+                        p{
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .fancybox-content{
+        width: 90%;
+        padding: 2.5rem;
+        #animatedModal{
+            .accessary-popup-container{
+                padding: 0;
+                flex-wrap: wrap;
+                .images{
+                    width: 100%;
+                }
+                .content{
+                    width: 100%;
+                    padding: 2rem 0;
+                    .headline{
+                        margin-bottom: 2rem;
+                        h1{
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
