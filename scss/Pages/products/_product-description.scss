@@ -6,7 +6,7 @@
             width: 25%;
             padding: 2rem 0;
             img{
-                @include img-fit(mull,100%,cover);
+                @include img-fit(null,100%,cover);
                 display: block;
                 margin: auto;
             }

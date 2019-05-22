@@ -1,0 +1,34 @@
+@include mobile-sm{
+    .main-footer{
+        .footer{
+            padding: 2rem 0;
+            display: block;
+            .menu-footer{
+                .nav-menu-footer{
+                    display: block;
+                    li.nav-item{
+                        border-right: 0;
+                        padding: 0.75rem 0;
+                    }
+                }
+                .copyright{
+                    margin-bottom: 1.5rem;
+                }
+            }
+            .menu-social{
+                padding: 1rem 0;
+                border-top: 1px solid $color-border;
+                .nav-menu-social{
+                    justify-content: center;
+                    li.nav-item{
+                        margin: 0 1.5rem;
+                        &:first-child{
+                            margin-left: 0;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}

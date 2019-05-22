@@ -1,0 +1,29 @@
+@include mobile-sm{
+    .info{
+        padding: 0;
+        margin-bottom: 0;
+        .group-name{
+            display: none;
+        }
+        .info-container{
+            flex-wrap: wrap;
+            .info-item{
+                width: 100%;
+                margin-right: 0;
+                padding: 1rem;
+                margin-bottom: 0.7rem;
+                border-bottom: 0.4rem solid $color-pr;
+                a{
+                    .info-icon{
+                        @include flex(null,center);
+                        img{
+                            @include size(34px,34px);
+                            margin-bottom:0;
+                            margin-right: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

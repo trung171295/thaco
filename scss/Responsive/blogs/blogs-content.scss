@@ -1,0 +1,46 @@
+@include mobile-sm{
+    .something-body{
+        .sb-c{
+            padding: 1.5rem 0;
+            flex-wrap: wrap;
+            .sidebar-blogs{
+                width: 100%;
+            }
+            .body-details{
+                width: 100%;
+                min-height: 0;
+                padding:1.5rem 0;
+                .headline{
+                    margin-bottom: 1.5rem;
+                    h3{
+                        font-size: 1.5rem;
+                        line-height: 2rem;
+                    }
+                }
+                .body{
+                    padding-bottom: 0;
+                    p{
+                        position: relative;
+                    }
+                }
+            }
+        }
+    }
+    .blogs-related{
+        padding: 2rem 0;
+        .group-name{
+            h1{
+                font-size: 1.8rem;
+            }
+        }
+        .list-blogs-related{
+            padding: 2.5rem 0;
+            flex-wrap: wrap;
+            .blogs-item{
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}

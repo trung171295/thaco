@@ -1,0 +1,15 @@
+@include mobile-sm{
+    .slideshow{
+        height: 245px;
+    }
+}
+@include mobile{
+    .slideshow{
+        height: 245px;
+    }
+}
+@include tablet{
+    .slideshow{
+        height: 360px;
+    }
+}

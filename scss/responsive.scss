@@ -4,20 +4,68 @@
 @import 'Helpers/_variables.scss';
 @import 'Helpers/_mixin.scss';
 @import 'Helpers/_assets.scss';
-@media only screen and (max-width: 768px) {
-}
-@media (min-width: 990px) and (max-width: 1250px) {
 
-}
-@media all and (min-width: 768px) and (max-width: 959px) {
+//assets
+@import 'Responsive/assets/header/header.scss';
 
-}
-@media all and (min-width: 480px) and (max-width: 767px) {
-}
-@media all and (max-width: 599px) {
-}
-@media all and (max-width: 479px) {
-}
+@import 'Responsive/assets/footer/footer.scss';
 
-@media only sreen and (width: 768px) {
-}
+@import 'Responsive/assets/assets';
+
+@import 'Responsive/assets/breabcrumb.scss';
+
+//////////////////////////////////// home
+
+// slideshow
+@import 'Responsive/home/slidehow.scss';
+
+//tabs-category
+@import 'Responsive/home/tabs-category.scss';
+
+// blogss
+@import 'Responsive/home/blogs.scss';
+
+//info
+@import 'Responsive/home/info.scss';
+
+////////////////////////////////// product-detail
+
+//banner
+@import 'Responsive/assets/banner.scss';
+
+//product-content
+@import 'Responsive/product/product-content.scss';
+
+//blogs-promotion
+@import 'Responsive/product/blogs-promotion.scss';
+
+//product-category
+@import 'Responsive/product/product-category.scss';
+
+//////////////////////////////// blogs
+
+//list-blogs
+
+@import 'Responsive/blogs/list-blogs.scss';
+
+@import 'Responsive/blogs/blogs-content.scss';
+
+
+///////////////////////////////// contact
+@import 'Responsive/contact/contact.scss';
+
+
+///////////////////////////////// about
+@import 'Responsive/about/about.scss';
+
+
+///////////////////////////////// recruitment
+@import 'Responsive/recruitment/recruitment.scss';
+
+
+//////////////////////////////// service
+@import 'Responsive/service/service.scss';
+
+
+///////////////////////////////// accessary
+@import 'Responsive/accessary/accessary.scss';

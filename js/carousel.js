@@ -33,6 +33,29 @@ $(document).ready(function() {
 			disableOnInteraction: false,
 		},
 		loopFillGroupWithBlank: true,
+		breakpoints: {
+			1024: {
+				slidesPerView: 5,
+				slidesPerGroup: 5,
+			},
+			768: {
+				slidesPerView: 2,
+				slidesPerColumn: 3,
+				slidesPerGroup: 6,
+			},
+			640: {
+				slidesPerView: 2,
+				slidesPerColumn: 3,
+				slidesPerGroup: 5,
+				autoplay: false
+			},
+			320: {
+				slidesPerView: 2,
+				slidesPerColumn:3,
+				slidesPerGroup: 5,
+				autoplay: false
+			}
+		  }
 	});
 	// --------------bus
 	var swiper = new Swiper('.sw-bus', {
@@ -45,6 +68,35 @@ $(document).ready(function() {
 			disableOnInteraction: false,
 		},
 		loopFillGroupWithBlank: true,
+		breakpoints: {
+			1024: {
+				slidesPerView: 5,
+				slidesPerGroup: 5,
+			},
+			768: {
+				slidesPerView: 2,
+				slidesPerColumn: 3,
+				slidesPerGroup: 6,
+				observer: true,
+				observeParents: true,
+			},
+			640: {
+				slidesPerView: 2,
+				slidesPerColumn: 3,
+				slidesPerGroup: 5,
+				autoplay: false,
+				observer: true,
+				observeParents: true,
+			},
+			320: {
+				slidesPerView: 2,
+				slidesPerColumn:3,
+				slidesPerGroup: 5,
+				autoplay: false,
+				observer: true,
+				observeParents: true,
+			}
+		  },
 		observer: true,
 		observeParents: true,
 	});
@@ -62,6 +114,33 @@ $(document).ready(function() {
 			el: '.pagi-blogs',
 			type: 'bullets',
 		},
+		breakpoints: {
+			1024: {
+				slidesPerView: 5,
+				slidesPerGroup: 5,
+			},
+			768: {
+				slidesPerView: 1,
+				slidesPerColumn: 2,
+				slidesPerGroup: 2,
+				spaceBetween: 30,
+			},
+			640: {
+				slidesPerView: 1,
+				slidesPerColumn: 2,
+				slidesPerGroup: 2,
+				autoplay: false,
+				spaceBetween: 20,
+			},
+			320: {
+				slidesPerView: 1,
+				slidesPerColumn:2,
+				slidesPerGroup: 2,
+				autoplay: false,
+				spaceBetween: 20,
+				
+			}
+		  }
 	});
 	// ------------thaco bus
 	var swiper = new Swiper('.sw-blogs-bus', {
@@ -75,7 +154,33 @@ $(document).ready(function() {
 		pagination: {
 			el: '.pagi-blogs-bus',
 			type: 'bullets',
-		},
+		},breakpoints: {
+			1024: {
+				slidesPerView: 5,
+				slidesPerGroup: 5,
+			},
+			768: {
+				slidesPerView: 1,
+				slidesPerColumn: 2,
+				slidesPerGroup: 2,
+				spaceBetween: 30,
+			},
+			640: {
+				slidesPerView: 1,
+				slidesPerColumn: 2,
+				slidesPerGroup: 2,
+				autoplay: false,
+				spaceBetween: 20,
+			},
+			320: {
+				slidesPerView: 1,
+				slidesPerColumn:2,
+				slidesPerGroup: 2,
+				autoplay: false,
+				spaceBetween: 20,
+				
+			}
+		  },
 		observer: true,
 		observeParents: true,
 	});
@@ -92,6 +197,33 @@ $(document).ready(function() {
 			el: '.pagi-blogs-private',
 			type: 'bullets',
 		},
+		breakpoints: {
+			1024: {
+				slidesPerView: 5,
+				slidesPerGroup: 5,
+			},
+			768: {
+				slidesPerView: 1,
+				slidesPerColumn: 2,
+				slidesPerGroup: 2,
+				spaceBetween: 30,
+			},
+			640: {
+				slidesPerView: 1,
+				slidesPerColumn: 2,
+				slidesPerGroup: 2,
+				autoplay: false,
+				spaceBetween: 20,
+			},
+			320: {
+				slidesPerView: 1,
+				slidesPerColumn:2,
+				slidesPerGroup: 2,
+				autoplay: false,
+				spaceBetween: 20,
+				
+			}
+		  },
 		observer: true,
 		observeParents: true,
 	});
@@ -104,6 +236,7 @@ $(document).ready(function() {
 			nextEl: '.next-control-tai',
 			prevEl: '.prev-control-tai',
 		},
+		spaceBetween: 30,
 	});
 
 	// giới thiệu thaco bus
@@ -112,6 +245,7 @@ $(document).ready(function() {
 			nextEl: '.next-control-bus',
 			prevEl: '.prev-control-bus',
 		},
+		spaceBetween: 30,
 		observer: true,
 		observeParents: true,
 	});
@@ -124,6 +258,24 @@ $(document).ready(function() {
 		freeMode: true,
 		watchSlidesVisibility: true,
 		watchSlidesProgress: true,
+		breakpoints: {
+			1024: {
+				spaceBetween: 30,
+				slidesPerView: 3,
+			},
+			768: {
+				spaceBetween: 30,
+				slidesPerView: 3,
+			},
+			640: {
+				spaceBetween: 1,
+				slidesPerView: 3,
+			},
+			320: {
+				spaceBetween: 1,
+				slidesPerView: 3,
+			}
+		  }
 	});
 	var galleryTop = new Swiper('.top-exterior', {
 		spaceBetween: 30,
@@ -137,6 +289,24 @@ $(document).ready(function() {
 		thumbs: {
 			swiper: galleryThumbs,
 		},
+		breakpoints: {
+			1024: {
+				spaceBetween: 30,
+				slidesPerView: 3,
+			},
+			768: {
+				spaceBetween: 30,
+				slidesPerView: 3,
+			},
+			640: {
+				spaceBetween: 30,
+				slidesPerView: 1,
+			},
+			320: {
+				spaceBetween: 30,
+				slidesPerView: 1,
+			}
+		  }
 	});
 	  // nội thất
 	  var galleryThumbs = new Swiper('.th-furniture', {
@@ -158,6 +328,24 @@ $(document).ready(function() {
 		thumbs: {
 			swiper: galleryThumbs,
 		},
+		breakpoints: {
+			1024: {
+				spaceBetween: 30,
+				slidesPerView: 3,
+			},
+			768: {
+				spaceBetween: 30,
+				slidesPerView: 3,
+			},
+			640: {
+				spaceBetween: 30,
+				slidesPerView: 1,
+			},
+			320: {
+				spaceBetween: 30,
+				slidesPerView: 1,
+			}
+		  }
 	});
 	// khung gầm
 	var galleryThumbs = new Swiper('.th-container', {
@@ -179,5 +367,24 @@ $(document).ready(function() {
 		thumbs: {
 			swiper: galleryThumbs,
 		},
+		breakpoints: {
+			1024: {
+				spaceBetween: 30,
+				slidesPerView: 3,
+			},
+			768: {
+				spaceBetween: 30,
+				slidesPerView: 3,
+			},
+			640: {
+				spaceBetween: 30,
+				slidesPerView: 1,
+			},
+			320: {
+				spaceBetween: 30,
+				slidesPerView: 1,
+			}
+		  }
 	});
+	swiper.init();
 });

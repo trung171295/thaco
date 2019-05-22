@@ -102,7 +102,7 @@
                         width: 100%;
                         margin-bottom: 1rem;
                         img{
-                            @include img-fit(100%,cover);
+                            @include img-fit(null,100%,cover);
                             height: 180px;
                         }
                     }
@@ -191,7 +191,7 @@
                         width: 100%;
                         margin-bottom: 1rem;
                         img{
-                            @include img-fit(100%,cover);
+                            @include img-fit(null,100%,cover);
                             height: 180px;
                         }
                     }

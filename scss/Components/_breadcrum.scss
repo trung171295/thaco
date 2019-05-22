@@ -18,7 +18,7 @@
                 font-weight: 900;
             }
             a{
-                @include text(1rem 'Arail',2.7rem,normal,none);
+                @include text(1rem 'Arial',2.7rem,normal,none);
                 color: $color-gr;
             }
         }

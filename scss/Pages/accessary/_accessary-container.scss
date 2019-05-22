@@ -4,7 +4,7 @@
     padding-left: 9rem;
     @include grid(
         repeat(3,minmax(200px,1fr)),
-        auto
+        repeat(auto-fit,210px)
     );
     grid-gap: 2rem;
     .accessary-item{

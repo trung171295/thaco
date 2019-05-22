@@ -34,6 +34,7 @@
 				display: block;
 				margin: 0 auto;
 				margin-bottom: 1.5rem;
+				height: 150px;
 				img{
 					@include img-fit(null,100%,cover);
 					@include transition(all 0.4s ease-out);

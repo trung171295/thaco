@@ -1,0 +1,10 @@
+@include mobile-sm{
+    .scroll-top{
+        display: none;
+    }
+    .stick-right{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+}

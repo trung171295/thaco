@@ -108,7 +108,7 @@
                         display: block;
                         width: 60%;
                         img{
-                            @include img-fit(100%,cover);
+                            @include img-fit(null,100%,cover);
                             height: 340px;
                         }
                     }
@@ -252,7 +252,7 @@
                         display: block;
                         width: 60%;
                         img{
-                            @include img-fit(100%,cover);
+                            @include img-fit(null,100%,cover);
                             height: 340px;
                         }
                     }

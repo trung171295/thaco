@@ -1,0 +1,52 @@
+@include mobile-sm{
+    .menu-showroom-type{
+        #tabShowroom{
+            li.nav-item{
+                margin-right: 0;
+                width: 100%;
+                a.nav-link{
+                    border-radius: 0;
+                }
+            }
+        }
+    }
+    .showroom-body{
+        padding: 2rem 0;
+        .showroom-container{
+            flex-wrap: wrap;
+            .sidebar-showroom{
+                display: none;
+            }
+            #tabContentShowroom{
+                width: 100%;
+                padding-left: 0;
+                .any-content{
+                    .group-name{
+                        margin-bottom: 1.5rem;
+                    }
+                    .any-container{
+                        table.table-any{
+                            thead{
+                                padding: 0;
+                            }
+                            tbody{
+                                tr{
+                                    td{
+                                        .table-product-img{
+                                            a{
+                                                img{
+                                                    height: 40px;
+                                                    width: 100%;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

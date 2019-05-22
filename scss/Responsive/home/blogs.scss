@@ -1,0 +1,43 @@
+@include mobile-sm{
+    .blogs{
+        padding: 2.5rem 0;
+        .blogs-content{
+            .group-name{
+                h1{
+                    font-size: 1.5rem;
+                    text-align: center;
+                }
+            }
+            .blogs-menu{
+                #tab-blogsseat{
+                    justify-content: center;
+                    li.nav-item{
+                        a.nav-link{
+                            font-size: 0.9rem;
+                        }
+                    }   
+                }
+                #tab-blogscontent{
+                    .sw-blogs,.sw-blogs-bus,.sw-blogs-private{
+                        .swiper-slide{
+                            .blogs-item{
+                                .blogs-item-img{
+                                    height: 145px!important;
+                                }
+                                .blogs-item-headline{
+                                    padding: 1rem!important;
+                                }
+                            }
+                        }
+                        .swiper-button-next,.swiper-button-prev{
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .button-radio{
+                position: relative;
+            }
+        }
+    }
+}

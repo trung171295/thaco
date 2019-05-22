@@ -1,0 +1,12 @@
+@include mobile-sm{
+    .br{
+        .breadcrumb{
+            padding: 1rem 0;
+            li.breadcrumb-item{
+                a{
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+}

@@ -10,15 +10,22 @@
             @include size(calc(50% - 1rem ),100%);
             @include flex(center,center);
             @include transition(all 0.5s ease-out);
+            cursor: pointer;
             margin-right: 1rem;
             background-image: url(../images/icon/line1.png);
             background-position: bottom right;
             background-repeat: no-repeat;
             -webkit-filter:  grayscale(100%) brightness(350%) contrast(0.9);
             filter: grayscale(100%) brightness(350%) contrast(0.9);
+            a.nav-link{
+                @include size(100%,100%);
+                @include flex(center,center);
+            }
             &.current{
                 filter: none!important;
                 a.nav-link{
+                    @include size(100%,100%);
+                    @include flex(center,center);
                     img{
                         filter: none!important;
                     }
